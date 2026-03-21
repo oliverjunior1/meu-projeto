@@ -57,6 +57,7 @@ span {
 
 body {
     background-color: yellow;
+    font-size: 3rem;
 }
 
 @media (min-width: 480px) {
