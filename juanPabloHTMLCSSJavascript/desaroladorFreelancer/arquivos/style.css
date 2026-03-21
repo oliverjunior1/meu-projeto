@@ -37,6 +37,10 @@ span {
 }
 
 .navegacion-principal {
-    background-color: #ffffff;
+
 }
 
+.navegacion-principal a {
+    background-color: var(--primario);
+    display: inline;
+}
