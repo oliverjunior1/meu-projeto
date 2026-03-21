@@ -41,5 +41,5 @@ span {
 }
 
 .navegacion-principal a {
-    background-color: var(--primario);
+    color:var(--blanco)
 }
