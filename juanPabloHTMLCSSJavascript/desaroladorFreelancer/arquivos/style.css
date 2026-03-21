@@ -54,3 +54,19 @@ span {
     padding: 1rem;
     color:var(--negro)
 }
+
+body {
+    background-color: yellow;
+}
+
+@media (min-width: 480px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        background-color: cornflowerblue;
+    }
+}
