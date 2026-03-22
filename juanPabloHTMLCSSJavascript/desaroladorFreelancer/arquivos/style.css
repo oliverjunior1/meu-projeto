@@ -62,7 +62,8 @@ span {
 }
 
 @media (min-width: 480px) {
-    h1 {
+    .navegacion-principal  {
+        flex-direction: row;
 
     }
 }
