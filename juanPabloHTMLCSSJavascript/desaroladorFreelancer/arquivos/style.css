@@ -28,7 +28,7 @@ span {
 }
 
 .contenedor {
-    width: 120rem;
+    max-width: 120rem;
     margin:0 auto;
 }
 
@@ -39,20 +39,36 @@ span {
 .navegacion-principal {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
+}
+
+@media (min-width: 480px) {
+    
 }
 
 @media (min-width:768px ) {
     .navegacion-principal {
         flex-direction: row;
+        justify-content: space-between;
     }
 }
 
+@media (min-width: 1140px) {
+    
+}
+
+@media (min-width: 1400px) {
+    
+}
+
 .navegacion-principal a {
+    display: block;
+    text-align: center;
     color:var(--blanco);
     text-decoration: none;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 700;
+    padding: 1rem;
 }
 
 .navegacion-principal a:hover {
