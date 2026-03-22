@@ -42,6 +42,12 @@ span {
     justify-content: space-evenly;
 }
 
+@media (min-width:768px ) {
+    .navegacion-principal {
+        flex-direction: row;
+    }
+}
+
 .navegacion-principal a {
     color:var(--blanco);
     text-decoration: none;
