@@ -77,15 +77,3 @@ span {
     color:var(--negro)
 }
 
-@media (min-width: 480px) {
-    .navegacion-principal  {
-        
-
-    }
-}
-
-@media (min-width: 768) {
-    h1 {
-        
-    }
-}
