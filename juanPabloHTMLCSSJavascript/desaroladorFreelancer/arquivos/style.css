@@ -77,3 +77,6 @@ span {
     color:var(--negro)
 }
 
+.hero {
+    background-image: url(../img/hero.jpg);
+}
