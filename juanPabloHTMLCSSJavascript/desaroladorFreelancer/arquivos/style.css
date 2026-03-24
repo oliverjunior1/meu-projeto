@@ -81,4 +81,5 @@ span {
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 45rem;
 }
