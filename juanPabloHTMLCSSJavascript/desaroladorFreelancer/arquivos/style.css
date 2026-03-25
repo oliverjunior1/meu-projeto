@@ -97,3 +97,7 @@ h1, h2, h3 {
 .contenido-hero {
     color: var(--blanco);
 }
+.ubicacion {
+    display: flex;
+    align-items: flex-end;
+}
