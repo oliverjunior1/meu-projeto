@@ -79,6 +79,12 @@ h1, h2, h3 {
     }
 }
 
+.sombra {
+    box-shadow: 0px 9px 0px -1px rgba(166,153,153,0.26);
+    -webkit-box-shadow: 0px 9px 0px -1px rgba(166,153,153,0.26);
+    -moz-box-shadow: 0px 9px 0px -1px rgba(166,153,153,0.26);
+}
+
 .navegacion-principal a {
     display: block;
     text-align: center;
