@@ -134,7 +134,9 @@ h1, h2, h3 {
 }
 
 /** Servicios **/
-.servicios {
+@media (min-width: 768) {
+    .servicios {
     display: grid;
-    grid: 200px 800px / 300px 300px;
+    grid-template-columns: repeat(3, 1fr);
+}
 }
