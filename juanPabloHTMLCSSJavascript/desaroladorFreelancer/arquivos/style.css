@@ -136,4 +136,5 @@ h1, h2, h3 {
 /** Servicios **/
 .servicios {
     display: grid;
+    grid: 200px 800px / 300px 300px;
 }
