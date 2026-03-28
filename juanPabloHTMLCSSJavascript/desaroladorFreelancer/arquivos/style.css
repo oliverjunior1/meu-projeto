@@ -80,11 +80,12 @@ h1, h2, h3 {
 }
 
 .sombra {
-    box-shadow: 0px 9px 0px -1px rgba(166,153,153,0.26);
-    -webkit-box-shadow: 0px 9px 0px -1px rgba(166,153,153,0.26);
-    -moz-box-shadow: 0px 9px 0px -1px rgba(166,153,153,0.26);
+    -webkit-box-shadow: 0px 5px 15px -0px rgba(112,112,112,0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
     background-color: var(--blanco);
     padding: 2rem;
+    border-radius: 1rem;
 }
 
 .navegacion-principal a {
@@ -108,6 +109,7 @@ h1, h2, h3 {
     background-size: cover;
     height: 450px;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .contenido-hero {
