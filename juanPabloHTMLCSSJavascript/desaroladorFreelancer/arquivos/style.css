@@ -136,18 +136,25 @@ h1, h2, h3 {
 /** Servicios **/
 @media (min-width: 768) {
     .servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+}
+.servicio {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 1rem;}
+    column-gap: 1rem;
 }
 
-.servicio {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 1rem;}
+.servicio h3 {
+    color: var(--secundario);
+    font-weight: normal;
+}
 
-.servicio {
-    display: flex;
+.servicio p {
+    line-height: 2;
+    text-align: center;
 }
 
 .servicio .iconos {
