@@ -141,14 +141,22 @@ h1, h2, h3 {
     column-gap: 1rem;}
 }
 
-.servicios {
-    
+.servicio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;}
+
+.servicio {
+    display: flex;
 }
 
-.servicios h3 {
-
-}
-
-.servicios icono {
-    
+.servicio .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
