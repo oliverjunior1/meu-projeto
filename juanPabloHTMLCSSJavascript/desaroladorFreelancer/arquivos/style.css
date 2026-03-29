@@ -37,6 +37,11 @@ h1, h2, h3 {
     font-size: 2rem;
 }
 
+/* Utilidades */
+.v-sm-100 {
+    width: 100%;
+}
+
 .contenedor {
     max-width: 120rem;
     margin:0 auto;
