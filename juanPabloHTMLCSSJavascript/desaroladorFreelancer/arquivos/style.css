@@ -167,3 +167,14 @@ h1, h2, h3 {
     justify-content: space-evenly;
     align-items: center;
 }
+
+/** Contacto**/
+
+.formulario {
+    background-color: var(--gris);
+}
+
+.formulario fieldset {
+    border: none;
+    width: min();/** Utilizar el valor más pequeño **/
+}
