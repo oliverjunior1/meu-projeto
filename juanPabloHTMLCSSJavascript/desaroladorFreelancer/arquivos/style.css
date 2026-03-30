@@ -216,6 +216,10 @@ h1, h2, h3 {
     display: block;
 }
 
+.campo textarea {
+    height: 20rem;
+}
+
 .campo text {
     width: 100%;
     border: none;
