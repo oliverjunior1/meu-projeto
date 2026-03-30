@@ -76,19 +76,6 @@ h1, h2, h3 {
     
 }
 
-@media (min-width: 480px) {
-    .boton {
-        width: auto;
-    }
-    
-}
-@media (min-width:768px ) {
-    .navegacion-principal {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
 .sombra {
     -webkit-box-shadow: 0px 5px 15px -0px rgba(112,112,112,0.54);
     -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
@@ -150,6 +137,19 @@ h1, h2, h3 {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 1rem;
     }
+    .contenedor-campos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto 20rem;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 480px) {
+    .boton {
+        width: auto;
+    }
+    
 }
 .servicio {
     display: grid;
@@ -202,7 +202,7 @@ h1, h2, h3 {
 }
 
 .contenedor-campos {
-
+    display: grid;
 }
 
 .campo {
