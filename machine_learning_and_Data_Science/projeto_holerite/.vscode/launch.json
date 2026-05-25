@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Testar extracao local",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/holerite_program.py",
+      "console": "integratedTerminal",
+      "args": ["--html", "${workspaceFolder}/sample_holerites.html"]
+    },
+    {
+      "name": "Consultar SOU CAIXA no Edge",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/holerite_program.py",
+      "console": "integratedTerminal",
+      "args": ["--browser", "edge"]
+    },
+    {
+      "name": "Consultar SOU CAIXA no Chrome",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/holerite_program.py",
+      "console": "integratedTerminal",
+      "args": ["--browser", "chrome"]
+    }
+  ]
+}
