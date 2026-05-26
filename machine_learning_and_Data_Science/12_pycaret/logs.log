@@ -6,3 +6,2316 @@
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
 2026-05-25 18:35:32,377:WARNING:
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-05-25 18:41:02,159:INFO:PyCaret ClassificationExperiment
+2026-05-25 18:41:02,161:INFO:Logging name: clf-default-name
+2026-05-25 18:41:02,162:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2026-05-25 18:41:02,162:INFO:version 3.3.2
+2026-05-25 18:41:02,162:INFO:Initializing setup()
+2026-05-25 18:41:02,162:INFO:self.USI: fdce
+2026-05-25 18:41:02,163:INFO:self._variable_keys: {'n_jobs_param', 'y_test', 'log_plots_param', 'html_param', 'idx', 'fold_groups_param', 'X', 'y_train', 'logging_param', '_available_plots', 'X_train', 'y', 'X_test', 'exp_id', 'memory', 'exp_name_log', 'data', 'USI', 'is_multiclass', 'gpu_param', 'target_param', 'fold_generator', 'fix_imbalance', 'seed', 'fold_shuffle_param', '_ml_usecase', 'gpu_n_jobs_param', 'pipeline'}
+2026-05-25 18:41:02,165:INFO:Checking environment
+2026-05-25 18:41:02,166:INFO:python_version: 3.11.15
+2026-05-25 18:41:02,166:INFO:python_build: ('main', 'Mar 11 2026 17:12:15')
+2026-05-25 18:41:02,167:INFO:machine: AMD64
+2026-05-25 18:41:02,167:INFO:platform: Windows-10-10.0.26200-SP0
+2026-05-25 18:41:02,170:INFO:Memory: svmem(total=8301043712, available=771207168, percent=90.7, used=7529836544, free=771207168)
+2026-05-25 18:41:02,171:INFO:Physical Core: 10
+2026-05-25 18:41:02,171:INFO:Logical Core: 12
+2026-05-25 18:41:02,171:INFO:Checking libraries
+2026-05-25 18:41:02,172:INFO:System:
+2026-05-25 18:41:02,173:INFO:    python: 3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]
+2026-05-25 18:41:02,173:INFO:executable: c:\Users\Olive\Anaconda\envs\pycaret311\python.exe
+2026-05-25 18:41:02,173:INFO:   machine: Windows-10-10.0.26200-SP0
+2026-05-25 18:41:02,173:INFO:PyCaret required dependencies:
+2026-05-25 18:41:02,209:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-25 18:41:07,642:INFO:                 pip: 26.0.1
+2026-05-25 18:41:07,642:INFO:          setuptools: 82.0.1
+2026-05-25 18:41:07,642:INFO:             pycaret: 3.3.2
+2026-05-25 18:41:07,642:INFO:             IPython: 9.13.0
+2026-05-25 18:41:07,642:INFO:          ipywidgets: 8.1.8
+2026-05-25 18:41:07,643:INFO:                tqdm: 4.67.3
+2026-05-25 18:41:07,643:INFO:               numpy: 1.26.4
+2026-05-25 18:41:07,643:INFO:              pandas: 2.1.4
+2026-05-25 18:41:07,643:INFO:              jinja2: 3.1.6
+2026-05-25 18:41:07,643:INFO:               scipy: 1.11.4
+2026-05-25 18:41:07,643:INFO:              joblib: 1.3.2
+2026-05-25 18:41:07,643:INFO:             sklearn: 1.4.2
+2026-05-25 18:41:07,643:INFO:                pyod: 3.4.0
+2026-05-25 18:41:07,643:INFO:            imblearn: 0.14.1
+2026-05-25 18:41:07,643:INFO:   category_encoders: 2.7.0
+2026-05-25 18:41:07,643:INFO:            lightgbm: 4.6.0
+2026-05-25 18:41:07,643:INFO:               numba: 0.62.1
+2026-05-25 18:41:07,643:INFO:            requests: 2.34.2
+2026-05-25 18:41:07,643:INFO:          matplotlib: 3.7.5
+2026-05-25 18:41:07,643:INFO:          scikitplot: 0.3.7
+2026-05-25 18:41:07,643:INFO:         yellowbrick: 1.5
+2026-05-25 18:41:07,643:INFO:              plotly: 6.7.0
+2026-05-25 18:41:07,643:INFO:    plotly-resampler: Not installed
+2026-05-25 18:41:07,643:INFO:             kaleido: 1.3.0
+2026-05-25 18:41:07,643:INFO:           schemdraw: 0.15
+2026-05-25 18:41:07,643:INFO:         statsmodels: 0.14.6
+2026-05-25 18:41:07,643:INFO:              sktime: 0.26.0
+2026-05-25 18:41:07,644:INFO:               tbats: 1.1.3
+2026-05-25 18:41:07,644:INFO:            pmdarima: 2.0.4
+2026-05-25 18:41:07,644:INFO:              psutil: 7.2.2
+2026-05-25 18:41:07,644:INFO:          markupsafe: 3.0.3
+2026-05-25 18:41:07,644:INFO:             pickle5: Not installed
+2026-05-25 18:41:07,644:INFO:         cloudpickle: 3.1.2
+2026-05-25 18:41:07,644:INFO:         deprecation: 2.1.0
+2026-05-25 18:41:07,644:INFO:              xxhash: 3.7.0
+2026-05-25 18:41:07,644:INFO:           wurlitzer: Not installed
+2026-05-25 18:41:07,644:INFO:PyCaret optional dependencies:
+2026-05-25 18:41:17,378:INFO:                shap: 0.44.1
+2026-05-25 18:41:17,378:INFO:           interpret: 0.6.9
+2026-05-25 18:41:17,378:INFO:                umap: 0.5.7
+2026-05-25 18:41:17,378:INFO:     ydata_profiling: 4.18.4
+2026-05-25 18:41:17,378:INFO:  explainerdashboard: 0.5.8
+2026-05-25 18:41:17,378:INFO:             autoviz: Not installed
+2026-05-25 18:41:17,378:INFO:           fairlearn: 0.7.0
+2026-05-25 18:41:17,378:INFO:          deepchecks: Not installed
+2026-05-25 18:41:17,378:INFO:             xgboost: Not installed
+2026-05-25 18:41:17,378:INFO:            catboost: 1.2.10
+2026-05-25 18:41:17,378:INFO:              kmodes: 0.12.2
+2026-05-25 18:41:17,378:INFO:             mlxtend: 0.23.4
+2026-05-25 18:41:17,378:INFO:       statsforecast: 1.5.0
+2026-05-25 18:41:17,378:INFO:        tune_sklearn: Not installed
+2026-05-25 18:41:17,378:INFO:                 ray: Not installed
+2026-05-25 18:41:17,378:INFO:            hyperopt: 0.2.7
+2026-05-25 18:41:17,378:INFO:              optuna: 4.8.0
+2026-05-25 18:41:17,379:INFO:               skopt: 0.10.2
+2026-05-25 18:41:17,379:INFO:              mlflow: 3.12.0
+2026-05-25 18:41:17,379:INFO:              gradio: 6.14.0
+2026-05-25 18:41:17,379:INFO:             fastapi: 0.136.3
+2026-05-25 18:41:17,379:INFO:             uvicorn: 0.48.0
+2026-05-25 18:41:17,379:INFO:              m2cgen: 0.10.0
+2026-05-25 18:41:17,379:INFO:           evidently: 0.4.40
+2026-05-25 18:41:17,379:INFO:               fugue: 0.8.7
+2026-05-25 18:41:17,379:INFO:           streamlit: Not installed
+2026-05-25 18:41:17,379:INFO:             prophet: Not installed
+2026-05-25 18:41:17,379:INFO:None
+2026-05-25 18:41:17,379:INFO:Set up data.
+2026-05-25 18:41:17,409:INFO:Set up folding strategy.
+2026-05-25 18:41:17,409:INFO:Set up train/test split.
+2026-05-25 18:41:17,425:INFO:Set up index.
+2026-05-25 18:41:17,428:INFO:Assigning column types.
+2026-05-25 18:41:17,433:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2026-05-25 18:41:17,473:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-05-25 18:41:17,705:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-05-25 18:41:17,743:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-25 18:41:17,743:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-25 18:41:19,225:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-05-25 18:41:19,226:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-05-25 18:41:19,253:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-25 18:41:19,253:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-25 18:41:19,254:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2026-05-25 18:41:19,303:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-05-25 18:41:19,327:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-25 18:41:19,327:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-25 18:41:19,367:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-05-25 18:41:19,398:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-25 18:41:19,400:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-25 18:41:19,401:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2026-05-25 18:41:19,477:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-25 18:41:19,477:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-25 18:41:19,548:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-25 18:41:19,550:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-25 18:41:19,558:INFO:Preparing preprocessing pipeline...
+2026-05-25 18:41:19,560:INFO:Set up simple imputation.
+2026-05-25 18:41:19,561:INFO:Set up column name cleaning.
+2026-05-25 18:41:19,591:INFO:Finished creating preprocessing pipeline.
+2026-05-25 18:41:19,597:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Olive\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['sepal length (cm)',
+                                             'sepal width (cm)',
+                                             'petal length (cm)',
+                                             'petal width (cm)'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'...
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False)
+2026-05-25 18:41:19,598:INFO:Creating final display dataframe.
+2026-05-25 18:41:19,673:INFO:Setup _display_container:                     Description             Value
+0                    Session id               123
+1                        Target            target
+2                   Target type        Multiclass
+3           Original data shape          (150, 5)
+4        Transformed data shape          (150, 5)
+5   Transformed train set shape          (105, 5)
+6    Transformed test set shape           (45, 5)
+7              Numeric features                 4
+8                    Preprocess              True
+9               Imputation type            simple
+10           Numeric imputation              mean
+11       Categorical imputation              mode
+12               Fold Generator   StratifiedKFold
+13                  Fold Number                10
+14                     CPU Jobs                -1
+15                      Use GPU             False
+16               Log Experiment             False
+17              Experiment Name  clf-default-name
+18                          USI              fdce
+2026-05-25 18:41:19,771:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-25 18:41:19,771:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-25 18:41:19,841:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-25 18:41:19,841:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-25 18:41:19,843:INFO:setup() successfully completed in 17.79s...............
+2026-05-25 18:41:53,640:INFO:Initializing compare_models()
+2026-05-25 18:41:53,640:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, include=None, exclude=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>})
+2026-05-25 18:41:53,641:INFO:Checking exceptions
+2026-05-25 18:41:53,653:INFO:Preparing display monitor
+2026-05-25 18:41:53,720:INFO:Initializing Logistic Regression
+2026-05-25 18:41:53,721:INFO:Total runtime is 0.0 minutes
+2026-05-25 18:41:53,728:INFO:SubProcess create_model() called ==================================
+2026-05-25 18:41:53,729:INFO:Initializing create_model()
+2026-05-25 18:41:53,729:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000020689242890>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 18:41:53,729:INFO:Checking exceptions
+2026-05-25 18:41:53,729:INFO:Importing libraries
+2026-05-25 18:41:53,730:INFO:Copying training dataset
+2026-05-25 18:41:53,746:INFO:Defining folds
+2026-05-25 18:41:53,747:INFO:Declaring metric variables
+2026-05-25 18:41:53,756:INFO:Importing untrained model
+2026-05-25 18:41:53,765:INFO:Logistic Regression Imported successfully
+2026-05-25 18:41:53,775:INFO:Starting cross validation
+2026-05-25 18:41:53,777:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 18:42:11,892:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-25 18:42:12,016:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-25 18:42:17,492:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:17,492:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:17,493:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:17,493:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:17,494:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:17,495:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:17,496:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:17,497:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:17,497:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:17,711:INFO:Calculating mean and std
+2026-05-25 18:42:17,954:INFO:Creating metrics dataframe
+2026-05-25 18:42:18,027:INFO:Uploading results into container
+2026-05-25 18:42:18,039:INFO:Uploading model into container now
+2026-05-25 18:42:18,047:INFO:_master_model_container: 1
+2026-05-25 18:42:18,049:INFO:_display_container: 2
+2026-05-25 18:42:18,056:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=123, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2026-05-25 18:42:18,057:INFO:create_model() successfully completed......................................
+2026-05-25 18:42:20,247:INFO:SubProcess create_model() end ==================================
+2026-05-25 18:42:20,248:INFO:Creating metrics dataframe
+2026-05-25 18:42:20,269:INFO:Initializing K Neighbors Classifier
+2026-05-25 18:42:20,270:INFO:Total runtime is 0.4425024231274923 minutes
+2026-05-25 18:42:20,275:INFO:SubProcess create_model() called ==================================
+2026-05-25 18:42:20,276:INFO:Initializing create_model()
+2026-05-25 18:42:20,276:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=knn, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000020689242890>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 18:42:20,276:INFO:Checking exceptions
+2026-05-25 18:42:20,276:INFO:Importing libraries
+2026-05-25 18:42:20,277:INFO:Copying training dataset
+2026-05-25 18:42:20,288:INFO:Defining folds
+2026-05-25 18:42:20,288:INFO:Declaring metric variables
+2026-05-25 18:42:20,293:INFO:Importing untrained model
+2026-05-25 18:42:20,296:INFO:K Neighbors Classifier Imported successfully
+2026-05-25 18:42:20,314:INFO:Starting cross validation
+2026-05-25 18:42:20,318:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 18:42:26,002:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-25 18:42:27,752:INFO:Calculating mean and std
+2026-05-25 18:42:27,754:INFO:Creating metrics dataframe
+2026-05-25 18:42:27,757:INFO:Uploading results into container
+2026-05-25 18:42:27,758:INFO:Uploading model into container now
+2026-05-25 18:42:27,758:INFO:_master_model_container: 2
+2026-05-25 18:42:27,759:INFO:_display_container: 2
+2026-05-25 18:42:27,759:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2026-05-25 18:42:27,759:INFO:create_model() successfully completed......................................
+2026-05-25 18:42:28,028:INFO:SubProcess create_model() end ==================================
+2026-05-25 18:42:28,028:INFO:Creating metrics dataframe
+2026-05-25 18:42:28,045:INFO:Initializing Naive Bayes
+2026-05-25 18:42:28,045:INFO:Total runtime is 0.5720920244852702 minutes
+2026-05-25 18:42:28,052:INFO:SubProcess create_model() called ==================================
+2026-05-25 18:42:28,052:INFO:Initializing create_model()
+2026-05-25 18:42:28,052:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=nb, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000020689242890>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 18:42:28,053:INFO:Checking exceptions
+2026-05-25 18:42:28,053:INFO:Importing libraries
+2026-05-25 18:42:28,053:INFO:Copying training dataset
+2026-05-25 18:42:28,056:INFO:Defining folds
+2026-05-25 18:42:28,056:INFO:Declaring metric variables
+2026-05-25 18:42:28,060:INFO:Importing untrained model
+2026-05-25 18:42:28,068:INFO:Naive Bayes Imported successfully
+2026-05-25 18:42:28,076:INFO:Starting cross validation
+2026-05-25 18:42:28,078:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 18:42:28,188:INFO:Calculating mean and std
+2026-05-25 18:42:28,189:INFO:Creating metrics dataframe
+2026-05-25 18:42:28,192:INFO:Uploading results into container
+2026-05-25 18:42:28,192:INFO:Uploading model into container now
+2026-05-25 18:42:28,193:INFO:_master_model_container: 3
+2026-05-25 18:42:28,193:INFO:_display_container: 2
+2026-05-25 18:42:28,193:INFO:GaussianNB(priors=None, var_smoothing=1e-09)
+2026-05-25 18:42:28,193:INFO:create_model() successfully completed......................................
+2026-05-25 18:42:28,390:INFO:SubProcess create_model() end ==================================
+2026-05-25 18:42:28,390:INFO:Creating metrics dataframe
+2026-05-25 18:42:28,400:INFO:Initializing Decision Tree Classifier
+2026-05-25 18:42:28,400:INFO:Total runtime is 0.5780041893323262 minutes
+2026-05-25 18:42:28,405:INFO:SubProcess create_model() called ==================================
+2026-05-25 18:42:28,405:INFO:Initializing create_model()
+2026-05-25 18:42:28,405:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=dt, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000020689242890>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 18:42:28,406:INFO:Checking exceptions
+2026-05-25 18:42:28,406:INFO:Importing libraries
+2026-05-25 18:42:28,406:INFO:Copying training dataset
+2026-05-25 18:42:28,408:INFO:Defining folds
+2026-05-25 18:42:28,408:INFO:Declaring metric variables
+2026-05-25 18:42:28,412:INFO:Importing untrained model
+2026-05-25 18:42:28,421:INFO:Decision Tree Classifier Imported successfully
+2026-05-25 18:42:28,428:INFO:Starting cross validation
+2026-05-25 18:42:28,430:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 18:42:28,542:INFO:Calculating mean and std
+2026-05-25 18:42:28,543:INFO:Creating metrics dataframe
+2026-05-25 18:42:28,545:INFO:Uploading results into container
+2026-05-25 18:42:28,545:INFO:Uploading model into container now
+2026-05-25 18:42:28,546:INFO:_master_model_container: 4
+2026-05-25 18:42:28,546:INFO:_display_container: 2
+2026-05-25 18:42:28,547:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, random_state=123, splitter='best')
+2026-05-25 18:42:28,547:INFO:create_model() successfully completed......................................
+2026-05-25 18:42:28,775:INFO:SubProcess create_model() end ==================================
+2026-05-25 18:42:28,775:INFO:Creating metrics dataframe
+2026-05-25 18:42:28,786:INFO:Initializing SVM - Linear Kernel
+2026-05-25 18:42:28,786:INFO:Total runtime is 0.5844449003537495 minutes
+2026-05-25 18:42:28,789:INFO:SubProcess create_model() called ==================================
+2026-05-25 18:42:28,790:INFO:Initializing create_model()
+2026-05-25 18:42:28,790:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=svm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000020689242890>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 18:42:28,790:INFO:Checking exceptions
+2026-05-25 18:42:28,790:INFO:Importing libraries
+2026-05-25 18:42:28,791:INFO:Copying training dataset
+2026-05-25 18:42:28,795:INFO:Defining folds
+2026-05-25 18:42:28,796:INFO:Declaring metric variables
+2026-05-25 18:42:28,802:INFO:Importing untrained model
+2026-05-25 18:42:28,807:INFO:SVM - Linear Kernel Imported successfully
+2026-05-25 18:42:28,822:INFO:Starting cross validation
+2026-05-25 18:42:28,823:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 18:42:29,061:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,063:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,075:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,077:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,078:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,079:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-05-25 18:42:29,089:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-05-25 18:42:29,092:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-05-25 18:42:29,103:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,107:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,119:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-05-25 18:42:29,121:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,129:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-05-25 18:42:29,129:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,132:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,142:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-05-25 18:42:29,152:INFO:Calculating mean and std
+2026-05-25 18:42:29,155:INFO:Creating metrics dataframe
+2026-05-25 18:42:29,157:INFO:Uploading results into container
+2026-05-25 18:42:29,157:INFO:Uploading model into container now
+2026-05-25 18:42:29,158:INFO:_master_model_container: 5
+2026-05-25 18:42:29,158:INFO:_display_container: 2
+2026-05-25 18:42:29,158:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=123, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2026-05-25 18:42:29,158:INFO:create_model() successfully completed......................................
+2026-05-25 18:42:29,374:INFO:SubProcess create_model() end ==================================
+2026-05-25 18:42:29,374:INFO:Creating metrics dataframe
+2026-05-25 18:42:29,387:INFO:Initializing Ridge Classifier
+2026-05-25 18:42:29,387:INFO:Total runtime is 0.5944539745648701 minutes
+2026-05-25 18:42:29,391:INFO:SubProcess create_model() called ==================================
+2026-05-25 18:42:29,392:INFO:Initializing create_model()
+2026-05-25 18:42:29,392:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=ridge, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000020689242890>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 18:42:29,392:INFO:Checking exceptions
+2026-05-25 18:42:29,392:INFO:Importing libraries
+2026-05-25 18:42:29,392:INFO:Copying training dataset
+2026-05-25 18:42:29,395:INFO:Defining folds
+2026-05-25 18:42:29,396:INFO:Declaring metric variables
+2026-05-25 18:42:29,400:INFO:Importing untrained model
+2026-05-25 18:42:29,405:INFO:Ridge Classifier Imported successfully
+2026-05-25 18:42:29,414:INFO:Starting cross validation
+2026-05-25 18:42:29,417:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 18:42:29,518:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,520:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,521:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,521:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,521:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,521:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,526:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,532:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,534:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,536:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:29,559:INFO:Calculating mean and std
+2026-05-25 18:42:29,560:INFO:Creating metrics dataframe
+2026-05-25 18:42:29,562:INFO:Uploading results into container
+2026-05-25 18:42:29,563:INFO:Uploading model into container now
+2026-05-25 18:42:29,564:INFO:_master_model_container: 6
+2026-05-25 18:42:29,564:INFO:_display_container: 2
+2026-05-25 18:42:29,566:INFO:RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
+                max_iter=None, positive=False, random_state=123, solver='auto',
+                tol=0.0001)
+2026-05-25 18:42:29,566:INFO:create_model() successfully completed......................................
+2026-05-25 18:42:29,780:INFO:SubProcess create_model() end ==================================
+2026-05-25 18:42:29,781:INFO:Creating metrics dataframe
+2026-05-25 18:42:29,794:INFO:Initializing Random Forest Classifier
+2026-05-25 18:42:29,795:INFO:Total runtime is 0.601242446899414 minutes
+2026-05-25 18:42:29,802:INFO:SubProcess create_model() called ==================================
+2026-05-25 18:42:29,803:INFO:Initializing create_model()
+2026-05-25 18:42:29,803:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000020689242890>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 18:42:29,803:INFO:Checking exceptions
+2026-05-25 18:42:29,803:INFO:Importing libraries
+2026-05-25 18:42:29,803:INFO:Copying training dataset
+2026-05-25 18:42:29,807:INFO:Defining folds
+2026-05-25 18:42:29,807:INFO:Declaring metric variables
+2026-05-25 18:42:29,811:INFO:Importing untrained model
+2026-05-25 18:42:29,817:INFO:Random Forest Classifier Imported successfully
+2026-05-25 18:42:29,833:INFO:Starting cross validation
+2026-05-25 18:42:29,835:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 18:42:30,445:INFO:Calculating mean and std
+2026-05-25 18:42:30,447:INFO:Creating metrics dataframe
+2026-05-25 18:42:30,452:INFO:Uploading results into container
+2026-05-25 18:42:30,453:INFO:Uploading model into container now
+2026-05-25 18:42:30,454:INFO:_master_model_container: 7
+2026-05-25 18:42:30,454:INFO:_display_container: 2
+2026-05-25 18:42:30,454:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=123, verbose=0,
+                       warm_start=False)
+2026-05-25 18:42:30,455:INFO:create_model() successfully completed......................................
+2026-05-25 18:42:30,729:INFO:SubProcess create_model() end ==================================
+2026-05-25 18:42:30,730:INFO:Creating metrics dataframe
+2026-05-25 18:42:30,746:INFO:Initializing Quadratic Discriminant Analysis
+2026-05-25 18:42:30,746:INFO:Total runtime is 0.6171103239059448 minutes
+2026-05-25 18:42:30,756:INFO:SubProcess create_model() called ==================================
+2026-05-25 18:42:30,757:INFO:Initializing create_model()
+2026-05-25 18:42:30,757:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=qda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000020689242890>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 18:42:30,757:INFO:Checking exceptions
+2026-05-25 18:42:30,757:INFO:Importing libraries
+2026-05-25 18:42:30,757:INFO:Copying training dataset
+2026-05-25 18:42:30,768:INFO:Defining folds
+2026-05-25 18:42:30,768:INFO:Declaring metric variables
+2026-05-25 18:42:30,775:INFO:Importing untrained model
+2026-05-25 18:42:30,782:INFO:Quadratic Discriminant Analysis Imported successfully
+2026-05-25 18:42:30,801:INFO:Starting cross validation
+2026-05-25 18:42:30,803:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 18:42:30,879:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:30,880:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:30,880:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:30,880:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:30,883:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:30,884:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:30,885:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:30,893:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:30,896:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:30,898:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:30,917:INFO:Calculating mean and std
+2026-05-25 18:42:30,918:INFO:Creating metrics dataframe
+2026-05-25 18:42:30,919:INFO:Uploading results into container
+2026-05-25 18:42:30,920:INFO:Uploading model into container now
+2026-05-25 18:42:30,920:INFO:_master_model_container: 8
+2026-05-25 18:42:30,920:INFO:_display_container: 2
+2026-05-25 18:42:30,921:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2026-05-25 18:42:30,921:INFO:create_model() successfully completed......................................
+2026-05-25 18:42:31,121:INFO:SubProcess create_model() end ==================================
+2026-05-25 18:42:31,122:INFO:Creating metrics dataframe
+2026-05-25 18:42:31,130:INFO:Initializing Ada Boost Classifier
+2026-05-25 18:42:31,130:INFO:Total runtime is 0.623508083820343 minutes
+2026-05-25 18:42:31,137:INFO:SubProcess create_model() called ==================================
+2026-05-25 18:42:31,137:INFO:Initializing create_model()
+2026-05-25 18:42:31,137:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=ada, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000020689242890>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 18:42:31,137:INFO:Checking exceptions
+2026-05-25 18:42:31,137:INFO:Importing libraries
+2026-05-25 18:42:31,137:INFO:Copying training dataset
+2026-05-25 18:42:31,141:INFO:Defining folds
+2026-05-25 18:42:31,141:INFO:Declaring metric variables
+2026-05-25 18:42:31,144:INFO:Importing untrained model
+2026-05-25 18:42:31,152:INFO:Ada Boost Classifier Imported successfully
+2026-05-25 18:42:31,161:INFO:Starting cross validation
+2026-05-25 18:42:31,163:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 18:42:31,209:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2026-05-25 18:42:31,211:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2026-05-25 18:42:31,211:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2026-05-25 18:42:31,213:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2026-05-25 18:42:31,222:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2026-05-25 18:42:31,225:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2026-05-25 18:42:31,227:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2026-05-25 18:42:31,230:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2026-05-25 18:42:31,238:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2026-05-25 18:42:31,239:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2026-05-25 18:42:31,375:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:31,378:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:31,382:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:31,386:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:31,391:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:31,392:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:31,403:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:31,408:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:31,415:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:31,432:INFO:Calculating mean and std
+2026-05-25 18:42:31,434:INFO:Creating metrics dataframe
+2026-05-25 18:42:31,436:INFO:Uploading results into container
+2026-05-25 18:42:31,436:INFO:Uploading model into container now
+2026-05-25 18:42:31,437:INFO:_master_model_container: 9
+2026-05-25 18:42:31,437:INFO:_display_container: 2
+2026-05-25 18:42:31,438:INFO:AdaBoostClassifier(algorithm='SAMME.R', estimator=None, learning_rate=1.0,
+                   n_estimators=50, random_state=123)
+2026-05-25 18:42:31,438:INFO:create_model() successfully completed......................................
+2026-05-25 18:42:31,657:INFO:SubProcess create_model() end ==================================
+2026-05-25 18:42:31,657:INFO:Creating metrics dataframe
+2026-05-25 18:42:31,668:INFO:Initializing Gradient Boosting Classifier
+2026-05-25 18:42:31,668:INFO:Total runtime is 0.6324746290842691 minutes
+2026-05-25 18:42:31,673:INFO:SubProcess create_model() called ==================================
+2026-05-25 18:42:31,673:INFO:Initializing create_model()
+2026-05-25 18:42:31,673:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=gbc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000020689242890>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 18:42:31,673:INFO:Checking exceptions
+2026-05-25 18:42:31,673:INFO:Importing libraries
+2026-05-25 18:42:31,673:INFO:Copying training dataset
+2026-05-25 18:42:31,677:INFO:Defining folds
+2026-05-25 18:42:31,678:INFO:Declaring metric variables
+2026-05-25 18:42:31,684:INFO:Importing untrained model
+2026-05-25 18:42:31,694:INFO:Gradient Boosting Classifier Imported successfully
+2026-05-25 18:42:31,706:INFO:Starting cross validation
+2026-05-25 18:42:31,708:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 18:42:32,243:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,267:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,271:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,282:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,293:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,302:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,308:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,311:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,317:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,323:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,339:INFO:Calculating mean and std
+2026-05-25 18:42:32,341:INFO:Creating metrics dataframe
+2026-05-25 18:42:32,343:INFO:Uploading results into container
+2026-05-25 18:42:32,344:INFO:Uploading model into container now
+2026-05-25 18:42:32,344:INFO:_master_model_container: 10
+2026-05-25 18:42:32,344:INFO:_display_container: 2
+2026-05-25 18:42:32,345:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=123, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2026-05-25 18:42:32,345:INFO:create_model() successfully completed......................................
+2026-05-25 18:42:32,594:INFO:SubProcess create_model() end ==================================
+2026-05-25 18:42:32,594:INFO:Creating metrics dataframe
+2026-05-25 18:42:32,605:INFO:Initializing Linear Discriminant Analysis
+2026-05-25 18:42:32,605:INFO:Total runtime is 0.6480898857116698 minutes
+2026-05-25 18:42:32,608:INFO:SubProcess create_model() called ==================================
+2026-05-25 18:42:32,608:INFO:Initializing create_model()
+2026-05-25 18:42:32,608:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=lda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000020689242890>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 18:42:32,610:INFO:Checking exceptions
+2026-05-25 18:42:32,610:INFO:Importing libraries
+2026-05-25 18:42:32,610:INFO:Copying training dataset
+2026-05-25 18:42:32,614:INFO:Defining folds
+2026-05-25 18:42:32,614:INFO:Declaring metric variables
+2026-05-25 18:42:32,622:INFO:Importing untrained model
+2026-05-25 18:42:32,628:INFO:Linear Discriminant Analysis Imported successfully
+2026-05-25 18:42:32,641:INFO:Starting cross validation
+2026-05-25 18:42:32,643:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 18:42:32,706:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,706:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,708:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,712:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,712:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,720:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,724:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,725:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,725:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-25 18:42:32,746:INFO:Calculating mean and std
+2026-05-25 18:42:32,748:INFO:Creating metrics dataframe
+2026-05-25 18:42:32,752:INFO:Uploading results into container
+2026-05-25 18:42:32,752:INFO:Uploading model into container now
+2026-05-25 18:42:32,752:INFO:_master_model_container: 11
+2026-05-25 18:42:32,753:INFO:_display_container: 2
+2026-05-25 18:42:32,753:INFO:LinearDiscriminantAnalysis(covariance_estimator=None, n_components=None,
+                           priors=None, shrinkage=None, solver='svd',
+                           store_covariance=False, tol=0.0001)
+2026-05-25 18:42:32,753:INFO:create_model() successfully completed......................................
+2026-05-25 18:42:32,973:INFO:SubProcess create_model() end ==================================
+2026-05-25 18:42:32,974:INFO:Creating metrics dataframe
+2026-05-25 18:42:32,990:INFO:Initializing Extra Trees Classifier
+2026-05-25 18:42:32,990:INFO:Total runtime is 0.6545041918754576 minutes
+2026-05-25 18:42:32,993:INFO:SubProcess create_model() called ==================================
+2026-05-25 18:42:32,993:INFO:Initializing create_model()
+2026-05-25 18:42:32,993:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=et, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000020689242890>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 18:42:32,993:INFO:Checking exceptions
+2026-05-25 18:42:32,993:INFO:Importing libraries
+2026-05-25 18:42:32,993:INFO:Copying training dataset
+2026-05-25 18:42:32,998:INFO:Defining folds
+2026-05-25 18:42:32,998:INFO:Declaring metric variables
+2026-05-25 18:42:33,001:INFO:Importing untrained model
+2026-05-25 18:42:33,006:INFO:Extra Trees Classifier Imported successfully
+2026-05-25 18:42:33,013:INFO:Starting cross validation
+2026-05-25 18:42:33,015:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 18:42:33,650:INFO:Calculating mean and std
+2026-05-25 18:42:33,651:INFO:Creating metrics dataframe
+2026-05-25 18:42:33,655:INFO:Uploading results into container
+2026-05-25 18:42:33,655:INFO:Uploading model into container now
+2026-05-25 18:42:33,656:INFO:_master_model_container: 12
+2026-05-25 18:42:33,656:INFO:_display_container: 2
+2026-05-25 18:42:33,657:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=123, verbose=0,
+                     warm_start=False)
+2026-05-25 18:42:33,657:INFO:create_model() successfully completed......................................
+2026-05-25 18:42:33,892:INFO:SubProcess create_model() end ==================================
+2026-05-25 18:42:33,893:INFO:Creating metrics dataframe
+2026-05-25 18:42:33,903:INFO:Initializing Light Gradient Boosting Machine
+2026-05-25 18:42:33,903:INFO:Total runtime is 0.6697179675102233 minutes
+2026-05-25 18:42:33,909:INFO:SubProcess create_model() called ==================================
+2026-05-25 18:42:33,909:INFO:Initializing create_model()
+2026-05-25 18:42:33,909:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000020689242890>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 18:42:33,909:INFO:Checking exceptions
+2026-05-25 18:42:33,909:INFO:Importing libraries
+2026-05-25 18:42:33,909:INFO:Copying training dataset
+2026-05-25 18:42:33,917:INFO:Defining folds
+2026-05-25 18:42:33,918:INFO:Declaring metric variables
+2026-05-25 18:42:33,924:INFO:Importing untrained model
+2026-05-25 18:42:33,930:INFO:Light Gradient Boosting Machine Imported successfully
+2026-05-25 18:42:33,943:INFO:Starting cross validation
+2026-05-25 18:42:33,944:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 18:42:34,840:INFO:Calculating mean and std
+2026-05-25 18:42:34,842:INFO:Creating metrics dataframe
+2026-05-25 18:42:34,847:INFO:Uploading results into container
+2026-05-25 18:42:34,848:INFO:Uploading model into container now
+2026-05-25 18:42:34,850:INFO:_master_model_container: 13
+2026-05-25 18:42:34,851:INFO:_display_container: 2
+2026-05-25 18:42:34,853:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2026-05-25 18:42:34,854:INFO:create_model() successfully completed......................................
+2026-05-25 18:42:35,100:INFO:SubProcess create_model() end ==================================
+2026-05-25 18:42:35,101:INFO:Creating metrics dataframe
+2026-05-25 18:42:35,116:INFO:Initializing CatBoost Classifier
+2026-05-25 18:42:35,116:INFO:Total runtime is 0.6899330298105875 minutes
+2026-05-25 18:42:35,120:INFO:SubProcess create_model() called ==================================
+2026-05-25 18:42:35,121:INFO:Initializing create_model()
+2026-05-25 18:42:35,121:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=catboost, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000020689242890>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 18:42:35,121:INFO:Checking exceptions
+2026-05-25 18:42:35,121:INFO:Importing libraries
+2026-05-25 18:42:35,121:INFO:Copying training dataset
+2026-05-25 18:42:35,126:INFO:Defining folds
+2026-05-25 18:42:35,126:INFO:Declaring metric variables
+2026-05-25 18:42:35,130:INFO:Importing untrained model
+2026-05-25 18:42:35,148:INFO:CatBoost Classifier Imported successfully
+2026-05-25 18:42:35,158:INFO:Starting cross validation
+2026-05-25 18:42:35,160:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 18:42:40,159:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\model_selection\_validation.py:547: FitFailedWarning: 
+9 fits failed out of a total of 10.
+The score on these train-test partitions for these parameters will be set to 0.0.
+If these failures are not expected, you can try to debug them by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+9 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\catboost\core.py", line 5547, in fit
+    self._fit(X, y, cat_features, text_features, embedding_features, None, graph, sample_weight, None, None, None, None, baseline, use_best_model,
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\catboost\core.py", line 2716, in _fit
+    self._train(
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\catboost\core.py", line 1824, in _train
+    self._object._train(train_pool, test_pool, params, allow_clear_pool, init_model._object if init_model else None)
+  File "_catboost.pyx", line 5430, in _catboost._CatBoost._train
+  File "_catboost.pyx", line 5479, in _catboost._CatBoost._train
+_catboost.CatBoostError: catboost/libs/train_lib/dir_helper.cpp:20: Can't create train working dir: catboost_info
+
+
+2026-05-25 18:42:40,160:INFO:Calculating mean and std
+2026-05-25 18:42:40,162:INFO:Creating metrics dataframe
+2026-05-25 18:42:40,169:INFO:Uploading results into container
+2026-05-25 18:42:40,170:INFO:Uploading model into container now
+2026-05-25 18:42:40,171:INFO:_master_model_container: 14
+2026-05-25 18:42:40,171:INFO:_display_container: 2
+2026-05-25 18:42:40,171:INFO:CatBoostClassifier(border_count=254, random_state=123, task_type='CPU', verbose=False)
+2026-05-25 18:42:40,171:INFO:create_model() successfully completed......................................
+2026-05-25 18:42:40,425:WARNING:create_model() for CatBoostClassifier(border_count=254, random_state=123, task_type='CPU', verbose=False) raised an exception or returned all 0.0, trying without fit_kwargs:
+2026-05-25 18:42:40,429:WARNING:Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 797, in compare_models
+    np.sum(
+AssertionError
+
+2026-05-25 18:42:40,430:INFO:Initializing create_model()
+2026-05-25 18:42:40,430:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=catboost, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000020689242890>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 18:42:40,430:INFO:Checking exceptions
+2026-05-25 18:42:40,430:INFO:Importing libraries
+2026-05-25 18:42:40,430:INFO:Copying training dataset
+2026-05-25 18:42:40,435:INFO:Defining folds
+2026-05-25 18:42:40,436:INFO:Declaring metric variables
+2026-05-25 18:42:40,439:INFO:Importing untrained model
+2026-05-25 18:42:40,445:INFO:CatBoost Classifier Imported successfully
+2026-05-25 18:42:40,457:INFO:Starting cross validation
+2026-05-25 18:42:40,458:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 18:42:46,116:INFO:Calculating mean and std
+2026-05-25 18:42:46,118:INFO:Creating metrics dataframe
+2026-05-25 18:42:46,120:INFO:Uploading results into container
+2026-05-25 18:42:46,123:INFO:Uploading model into container now
+2026-05-25 18:42:46,123:INFO:_master_model_container: 15
+2026-05-25 18:42:46,124:INFO:_display_container: 2
+2026-05-25 18:42:46,124:INFO:CatBoostClassifier(border_count=254, random_state=123, task_type='CPU', verbose=False)
+2026-05-25 18:42:46,124:INFO:create_model() successfully completed......................................
+2026-05-25 18:42:46,359:INFO:SubProcess create_model() end ==================================
+2026-05-25 18:42:46,360:INFO:Creating metrics dataframe
+2026-05-25 18:42:46,373:INFO:Initializing Dummy Classifier
+2026-05-25 18:42:46,373:INFO:Total runtime is 0.8775542140007018 minutes
+2026-05-25 18:42:46,376:INFO:SubProcess create_model() called ==================================
+2026-05-25 18:42:46,376:INFO:Initializing create_model()
+2026-05-25 18:42:46,376:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=dummy, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000020689242890>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 18:42:46,376:INFO:Checking exceptions
+2026-05-25 18:42:46,376:INFO:Importing libraries
+2026-05-25 18:42:46,376:INFO:Copying training dataset
+2026-05-25 18:42:46,383:INFO:Defining folds
+2026-05-25 18:42:46,383:INFO:Declaring metric variables
+2026-05-25 18:42:46,389:INFO:Importing untrained model
+2026-05-25 18:42:46,395:INFO:Dummy Classifier Imported successfully
+2026-05-25 18:42:46,404:INFO:Starting cross validation
+2026-05-25 18:42:46,405:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 18:42:46,478:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-05-25 18:42:46,488:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-05-25 18:42:46,488:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-05-25 18:42:46,488:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-05-25 18:42:46,489:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-05-25 18:42:46,492:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-05-25 18:42:46,493:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-05-25 18:42:46,502:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-05-25 18:42:46,505:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-05-25 18:42:46,507:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-05-25 18:42:46,520:INFO:Calculating mean and std
+2026-05-25 18:42:46,526:INFO:Creating metrics dataframe
+2026-05-25 18:42:46,528:INFO:Uploading results into container
+2026-05-25 18:42:46,529:INFO:Uploading model into container now
+2026-05-25 18:42:46,529:INFO:_master_model_container: 16
+2026-05-25 18:42:46,529:INFO:_display_container: 2
+2026-05-25 18:42:46,529:INFO:DummyClassifier(constant=None, random_state=123, strategy='prior')
+2026-05-25 18:42:46,530:INFO:create_model() successfully completed......................................
+2026-05-25 18:42:46,774:INFO:SubProcess create_model() end ==================================
+2026-05-25 18:42:46,775:INFO:Creating metrics dataframe
+2026-05-25 18:42:46,896:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:339: FutureWarning: Styler.applymap has been deprecated. Use Styler.map instead.
+
+2026-05-25 18:42:46,908:INFO:Initializing create_model()
+2026-05-25 18:42:46,908:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=123, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 18:42:46,908:INFO:Checking exceptions
+2026-05-25 18:42:46,919:INFO:Importing libraries
+2026-05-25 18:42:46,919:INFO:Copying training dataset
+2026-05-25 18:42:46,923:INFO:Defining folds
+2026-05-25 18:42:46,923:INFO:Declaring metric variables
+2026-05-25 18:42:46,923:INFO:Importing untrained model
+2026-05-25 18:42:46,923:INFO:Declaring custom model
+2026-05-25 18:42:46,924:INFO:Logistic Regression Imported successfully
+2026-05-25 18:42:46,925:INFO:Cross validation set to False
+2026-05-25 18:42:46,925:INFO:Fitting Model
+2026-05-25 18:42:46,969:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=123, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2026-05-25 18:42:46,969:INFO:create_model() successfully completed......................................
+2026-05-25 18:42:47,219:INFO:_master_model_container: 16
+2026-05-25 18:42:47,219:INFO:_display_container: 2
+2026-05-25 18:42:47,220:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=123, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2026-05-25 18:42:47,220:INFO:compare_models() successfully completed......................................
