@@ -5505,3 +5505,29 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
 2026-05-25 22:16:51,083:INFO:_display_container: 2
 2026-05-25 22:16:51,083:INFO:CatBoostRegressor(border_count=254, loss_function='RMSE', random_state=123, task_type='CPU', verbose=False)
 2026-05-25 22:16:51,084:INFO:compare_models() successfully completed......................................
+2026-05-25 22:17:49,799:INFO:Initializing create_model()
+2026-05-25 22:17:49,799:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002351A7C98D0>, estimator=rf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 22:17:49,799:INFO:Checking exceptions
+2026-05-25 22:17:49,828:INFO:Importing libraries
+2026-05-25 22:17:49,831:INFO:Copying training dataset
+2026-05-25 22:17:49,844:INFO:Defining folds
+2026-05-25 22:17:49,845:INFO:Declaring metric variables
+2026-05-25 22:17:49,848:INFO:Importing untrained model
+2026-05-25 22:17:49,853:INFO:Random Forest Regressor Imported successfully
+2026-05-25 22:17:49,868:INFO:Starting cross validation
+2026-05-25 22:17:49,871:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 22:18:10,836:INFO:Calculating mean and std
+2026-05-25 22:18:10,845:INFO:Creating metrics dataframe
+2026-05-25 22:18:10,864:INFO:Finalizing model
+2026-05-25 22:18:13,631:INFO:Uploading results into container
+2026-05-25 22:18:13,633:INFO:Uploading model into container now
+2026-05-25 22:18:13,674:INFO:_master_model_container: 20
+2026-05-25 22:18:13,675:INFO:_display_container: 3
+2026-05-25 22:18:13,680:INFO:RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='squared_error',
+                      max_depth=None, max_features=1.0, max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, monotonic_cst=None,
+                      n_estimators=100, n_jobs=-1, oob_score=False,
+                      random_state=123, verbose=0, warm_start=False)
+2026-05-25 22:18:13,681:INFO:create_model() successfully completed......................................
