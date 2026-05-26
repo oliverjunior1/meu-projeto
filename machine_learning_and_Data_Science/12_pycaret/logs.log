@@ -5531,3 +5531,147 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
                       n_estimators=100, n_jobs=-1, oob_score=False,
                       random_state=123, verbose=0, warm_start=False)
 2026-05-25 22:18:13,681:INFO:create_model() successfully completed......................................
+2026-05-26 20:08:05,728:INFO:PyCaret ClusteringExperiment
+2026-05-26 20:08:05,730:INFO:Logging name: cluster-default-name
+2026-05-26 20:08:05,731:INFO:ML Usecase: MLUsecase.CLUSTERING
+2026-05-26 20:08:05,731:INFO:version 3.3.2
+2026-05-26 20:08:05,731:INFO:Initializing setup()
+2026-05-26 20:08:05,731:INFO:self.USI: 9295
+2026-05-26 20:08:05,731:INFO:self._variable_keys: {'seed', 'exp_name_log', 'n_jobs_param', 'gpu_n_jobs_param', 'X', 'USI', 'memory', 'gpu_param', '_available_plots', 'idx', 'logging_param', 'log_plots_param', '_ml_usecase', 'pipeline', 'exp_id', 'html_param', 'data'}
+2026-05-26 20:08:05,732:INFO:Checking environment
+2026-05-26 20:08:05,733:INFO:python_version: 3.11.15
+2026-05-26 20:08:05,733:INFO:python_build: ('main', 'Mar 11 2026 17:12:15')
+2026-05-26 20:08:05,734:INFO:machine: AMD64
+2026-05-26 20:08:05,735:INFO:platform: Windows-10-10.0.26200-SP0
+2026-05-26 20:08:05,744:INFO:Memory: svmem(total=8301043712, available=1109848064, percent=86.6, used=7191195648, free=1109848064)
+2026-05-26 20:08:05,747:INFO:Physical Core: 10
+2026-05-26 20:08:05,747:INFO:Logical Core: 12
+2026-05-26 20:08:05,748:INFO:Checking libraries
+2026-05-26 20:08:05,749:INFO:System:
+2026-05-26 20:08:05,751:INFO:    python: 3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]
+2026-05-26 20:08:05,752:INFO:executable: c:\Users\Olive\Anaconda\envs\pycaret311\python.exe
+2026-05-26 20:08:05,752:INFO:   machine: Windows-10-10.0.26200-SP0
+2026-05-26 20:08:05,752:INFO:PyCaret required dependencies:
+2026-05-26 20:08:05,758:INFO:                 pip: 26.0.1
+2026-05-26 20:08:05,758:INFO:          setuptools: 82.0.1
+2026-05-26 20:08:05,759:INFO:             pycaret: 3.3.2
+2026-05-26 20:08:05,759:INFO:             IPython: 9.13.0
+2026-05-26 20:08:05,759:INFO:          ipywidgets: 8.1.8
+2026-05-26 20:08:05,759:INFO:                tqdm: 4.67.3
+2026-05-26 20:08:05,759:INFO:               numpy: 1.26.4
+2026-05-26 20:08:05,759:INFO:              pandas: 2.1.4
+2026-05-26 20:08:05,759:INFO:              jinja2: 3.1.6
+2026-05-26 20:08:05,759:INFO:               scipy: 1.11.4
+2026-05-26 20:08:05,759:INFO:              joblib: 1.3.2
+2026-05-26 20:08:05,759:INFO:             sklearn: 1.4.2
+2026-05-26 20:08:05,759:INFO:                pyod: 3.4.0
+2026-05-26 20:08:05,759:INFO:            imblearn: 0.14.1
+2026-05-26 20:08:05,759:INFO:   category_encoders: 2.7.0
+2026-05-26 20:08:05,759:INFO:            lightgbm: 4.6.0
+2026-05-26 20:08:05,759:INFO:               numba: 0.62.1
+2026-05-26 20:08:05,760:INFO:            requests: 2.34.2
+2026-05-26 20:08:05,760:INFO:          matplotlib: 3.7.5
+2026-05-26 20:08:05,760:INFO:          scikitplot: 0.3.7
+2026-05-26 20:08:05,760:INFO:         yellowbrick: 1.5
+2026-05-26 20:08:05,760:INFO:              plotly: 6.7.0
+2026-05-26 20:08:05,760:INFO:    plotly-resampler: Not installed
+2026-05-26 20:08:05,760:INFO:             kaleido: 1.3.0
+2026-05-26 20:08:05,760:INFO:           schemdraw: 0.15
+2026-05-26 20:08:05,760:INFO:         statsmodels: 0.14.6
+2026-05-26 20:08:05,760:INFO:              sktime: 0.26.0
+2026-05-26 20:08:05,760:INFO:               tbats: 1.1.3
+2026-05-26 20:08:05,760:INFO:            pmdarima: 2.0.4
+2026-05-26 20:08:05,760:INFO:              psutil: 7.2.2
+2026-05-26 20:08:05,761:INFO:          markupsafe: 3.0.3
+2026-05-26 20:08:05,761:INFO:             pickle5: Not installed
+2026-05-26 20:08:05,761:INFO:         cloudpickle: 3.1.2
+2026-05-26 20:08:05,761:INFO:         deprecation: 2.1.0
+2026-05-26 20:08:05,761:INFO:              xxhash: 3.7.0
+2026-05-26 20:08:05,761:INFO:           wurlitzer: Not installed
+2026-05-26 20:08:05,761:INFO:PyCaret optional dependencies:
+2026-05-26 20:08:05,765:INFO:                shap: 0.44.1
+2026-05-26 20:08:05,766:INFO:           interpret: 0.6.9
+2026-05-26 20:08:05,766:INFO:                umap: 0.5.7
+2026-05-26 20:08:05,766:INFO:     ydata_profiling: 4.18.4
+2026-05-26 20:08:05,766:INFO:  explainerdashboard: 0.5.8
+2026-05-26 20:08:05,766:INFO:             autoviz: Not installed
+2026-05-26 20:08:05,766:INFO:           fairlearn: 0.7.0
+2026-05-26 20:08:05,766:INFO:          deepchecks: Not installed
+2026-05-26 20:08:05,766:INFO:             xgboost: Not installed
+2026-05-26 20:08:05,766:INFO:            catboost: 1.2.10
+2026-05-26 20:08:05,766:INFO:              kmodes: 0.12.2
+2026-05-26 20:08:05,766:INFO:             mlxtend: 0.23.4
+2026-05-26 20:08:05,766:INFO:       statsforecast: 1.5.0
+2026-05-26 20:08:05,766:INFO:        tune_sklearn: Not installed
+2026-05-26 20:08:05,766:INFO:                 ray: Not installed
+2026-05-26 20:08:05,766:INFO:            hyperopt: 0.2.7
+2026-05-26 20:08:05,767:INFO:              optuna: 4.8.0
+2026-05-26 20:08:05,767:INFO:               skopt: 0.10.2
+2026-05-26 20:08:05,767:INFO:              mlflow: 3.12.0
+2026-05-26 20:08:05,767:INFO:              gradio: 6.14.0
+2026-05-26 20:08:05,767:INFO:             fastapi: 0.136.3
+2026-05-26 20:08:05,767:INFO:             uvicorn: 0.48.0
+2026-05-26 20:08:05,767:INFO:              m2cgen: 0.10.0
+2026-05-26 20:08:05,767:INFO:           evidently: 0.4.40
+2026-05-26 20:08:05,767:INFO:               fugue: 0.8.7
+2026-05-26 20:08:05,767:INFO:           streamlit: Not installed
+2026-05-26 20:08:05,767:INFO:             prophet: Not installed
+2026-05-26 20:08:05,767:INFO:None
+2026-05-26 20:08:05,769:INFO:Set up data.
+2026-05-26 20:08:05,825:INFO:Set up index.
+2026-05-26 20:08:05,826:INFO:Assigning column types.
+2026-05-26 20:08:05,847:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2026-05-26 20:08:05,856:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2026-05-26 20:08:05,858:INFO:Soft dependency imported: kmodes: 0.12.2
+2026-05-26 20:08:05,938:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2026-05-26 20:08:05,939:INFO:Soft dependency imported: kmodes: 0.12.2
+2026-05-26 20:08:05,939:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2026-05-26 20:08:05,940:INFO:Soft dependency imported: kmodes: 0.12.2
+2026-05-26 20:08:05,940:INFO:Soft dependency imported: kmodes: 0.12.2
+2026-05-26 20:08:05,960:INFO:Preparing preprocessing pipeline...
+2026-05-26 20:08:05,960:INFO:Set up simple imputation.
+2026-05-26 20:08:06,180:INFO:Finished creating preprocessing pipeline.
+2026-05-26 20:08:06,200:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Olive\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['alcohol', 'malic_acid', 'ash',
+                                             'alcalinity_of_ash', 'magnesium',
+                                             'total_phenols', 'flavanoids',
+                                             'nonflavanoid_phenols',
+                                             'proanthocyanins',
+                                             'color_intensity', 'hue',
+                                             'od280/od315_of_diluted_wines',
+                                             'proline', 'target'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent')))],
+         verbose=False)
+2026-05-26 20:08:06,201:INFO:Creating final display dataframe.
+2026-05-26 20:08:06,292:INFO:Setup _display_container:                Description                 Value
+0               Session id                   123
+1      Original data shape             (178, 14)
+2   Transformed data shape             (178, 14)
+3         Numeric features                    14
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                 CPU Jobs                    -1
+9                  Use GPU                 False
+10          Log Experiment                 False
+11         Experiment Name  cluster-default-name
+12                     USI                  9295
+2026-05-26 20:08:06,386:INFO:Soft dependency imported: kmodes: 0.12.2
+2026-05-26 20:08:06,388:INFO:Soft dependency imported: kmodes: 0.12.2
+2026-05-26 20:08:06,395:INFO:setup() successfully completed in 0.87s...............
