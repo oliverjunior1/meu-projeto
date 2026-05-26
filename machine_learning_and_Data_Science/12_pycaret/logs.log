@@ -2319,3 +2319,69 @@ AssertionError
                    random_state=123, solver='lbfgs', tol=0.0001, verbose=0,
                    warm_start=False)
 2026-05-25 18:42:47,220:INFO:compare_models() successfully completed......................................
+2026-05-25 22:05:00,758:INFO:Initializing compare_models()
+2026-05-25 22:05:00,769:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, include=None, exclude=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>})
+2026-05-25 22:05:00,771:INFO:Checking exceptions
+2026-05-25 22:05:00,867:INFO:Preparing display monitor
+2026-05-25 22:05:01,006:INFO:Initializing Logistic Regression
+2026-05-25 22:05:01,006:INFO:Total runtime is 0.0 minutes
+2026-05-25 22:05:01,009:INFO:SubProcess create_model() called ==================================
+2026-05-25 22:05:01,015:INFO:Initializing create_model()
+2026-05-25 22:05:01,015:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000020688C3D410>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 22:05:01,015:INFO:Checking exceptions
+2026-05-25 22:05:01,015:INFO:Importing libraries
+2026-05-25 22:05:01,015:INFO:Copying training dataset
+2026-05-25 22:05:01,017:INFO:Defining folds
+2026-05-25 22:05:01,018:INFO:Declaring metric variables
+2026-05-25 22:05:01,020:INFO:Importing untrained model
+2026-05-25 22:05:01,028:INFO:Logistic Regression Imported successfully
+2026-05-25 22:05:01,034:INFO:Starting cross validation
+2026-05-25 22:05:01,056:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 22:05:41,100:INFO:Initializing create_model()
+2026-05-25 22:05:41,100:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002063C9DB250>, estimator=rf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-25 22:05:41,101:INFO:Checking exceptions
+2026-05-25 22:05:41,130:INFO:Importing libraries
+2026-05-25 22:05:41,130:INFO:Copying training dataset
+2026-05-25 22:05:41,133:INFO:Defining folds
+2026-05-25 22:05:41,133:INFO:Declaring metric variables
+2026-05-25 22:05:41,137:INFO:Importing untrained model
+2026-05-25 22:05:41,141:INFO:Random Forest Classifier Imported successfully
+2026-05-25 22:05:41,152:INFO:Starting cross validation
+2026-05-25 22:05:41,156:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-25 22:05:53,783:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-25 22:05:53,783:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-25 22:05:53,783:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-25 22:05:53,784:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-25 22:05:53,784:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-25 22:05:53,784:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-25 22:05:53,784:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-25 22:05:59,153:INFO:Calculating mean and std
+2026-05-25 22:05:59,181:INFO:Creating metrics dataframe
+2026-05-25 22:05:59,313:INFO:Finalizing model
+2026-05-25 22:05:59,816:INFO:Uploading results into container
+2026-05-25 22:05:59,818:INFO:Uploading model into container now
+2026-05-25 22:05:59,873:INFO:_master_model_container: 17
+2026-05-25 22:05:59,873:INFO:_display_container: 3
+2026-05-25 22:05:59,880:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=123, verbose=0,
+                       warm_start=False)
+2026-05-25 22:05:59,881:INFO:create_model() successfully completed......................................
