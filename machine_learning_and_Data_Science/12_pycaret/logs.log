@@ -9123,3 +9123,21 @@ Returning the number of logical cores instead. You can silence this warning by s
 11         Experiment Name  anomaly-default-name
 12                     USI                  5f80
 2026-05-26 21:09:28,382:INFO:setup() successfully completed in 1.03s...............
+2026-05-26 21:10:10,068:INFO:Initializing create_model()
+2026-05-26 21:10:10,069:INFO:create_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000208B243EB90>, estimator=iforest, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2026-05-26 21:10:10,069:INFO:Checking exceptions
+2026-05-26 21:10:10,275:INFO:Importing untrained model
+2026-05-26 21:10:10,291:INFO:Isolation Forest Imported successfully
+2026-05-26 21:10:10,319:INFO:Fitting Model
+2026-05-26 21:10:11,335:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2026-05-26 21:10:11,336:INFO:create_models() successfully completed......................................
+2026-05-26 21:10:11,360:INFO:Uploading results into container
+2026-05-26 21:10:11,361:INFO:Uploading model into container now
+2026-05-26 21:10:11,374:INFO:_master_model_container: 1
+2026-05-26 21:10:11,375:INFO:_display_container: 1
+2026-05-26 21:10:11,378:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2026-05-26 21:10:11,379:INFO:create_model() successfully completed......................................
