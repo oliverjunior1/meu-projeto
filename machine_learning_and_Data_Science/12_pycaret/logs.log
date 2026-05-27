@@ -11692,3 +11692,130 @@ Alternately, you can install this by running `pip install pycaret[models]`
 2026-05-26 21:29:46,685:INFO:Ridge Regression Imported successfully
 2026-05-26 21:29:46,722:INFO:Starting cross validation
 2026-05-26 21:29:46,725:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-26 21:29:47,224:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.87896e-08): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2026-05-26 21:29:47,224:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.9028e-08): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2026-05-26 21:29:47,226:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.96351e-08): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2026-05-26 21:29:47,236:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.90941e-08): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2026-05-26 21:29:47,240:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.89454e-08): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2026-05-26 21:29:47,285:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.64869e-08): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2026-05-26 21:29:47,292:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.86344e-08): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2026-05-26 21:29:47,337:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.8234e-08): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2026-05-26 21:29:47,338:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.88134e-08): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2026-05-26 21:29:47,355:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.96131e-08): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2026-05-26 21:29:47,399:INFO:Calculating mean and std
+2026-05-26 21:29:47,404:INFO:Creating metrics dataframe
+2026-05-26 21:29:47,415:INFO:Uploading results into container
+2026-05-26 21:29:47,418:INFO:Uploading model into container now
+2026-05-26 21:29:47,420:INFO:_master_model_container: 3
+2026-05-26 21:29:47,421:INFO:_display_container: 2
+2026-05-26 21:29:47,422:INFO:Ridge(alpha=1.0, copy_X=True, fit_intercept=True, max_iter=None, positive=False,
+      random_state=123, solver='auto', tol=0.0001)
+2026-05-26 21:29:47,423:INFO:create_model() successfully completed......................................
+2026-05-26 21:29:48,041:INFO:SubProcess create_model() end ==================================
+2026-05-26 21:29:48,042:INFO:Creating metrics dataframe
+2026-05-26 21:29:48,086:INFO:Initializing Elastic Net
+2026-05-26 21:29:48,087:INFO:Total runtime is 0.0819461464881897 minutes
+2026-05-26 21:29:48,106:INFO:SubProcess create_model() called ==================================
+2026-05-26 21:29:48,107:INFO:Initializing create_model()
+2026-05-26 21:29:48,108:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000027C140FD850>, estimator=en, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000027C8990CD50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-26 21:29:48,109:INFO:Checking exceptions
+2026-05-26 21:29:48,109:INFO:Importing libraries
+2026-05-26 21:29:48,110:INFO:Copying training dataset
+2026-05-26 21:29:48,164:INFO:Defining folds
+2026-05-26 21:29:48,165:INFO:Declaring metric variables
+2026-05-26 21:29:48,185:INFO:Importing untrained model
+2026-05-26 21:29:48,202:INFO:Elastic Net Imported successfully
+2026-05-26 21:29:48,236:INFO:Starting cross validation
+2026-05-26 21:29:48,239:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-26 21:29:48,748:INFO:Calculating mean and std
+2026-05-26 21:29:48,754:INFO:Creating metrics dataframe
+2026-05-26 21:29:48,769:INFO:Uploading results into container
+2026-05-26 21:29:48,771:INFO:Uploading model into container now
+2026-05-26 21:29:48,773:INFO:_master_model_container: 4
+2026-05-26 21:29:48,774:INFO:_display_container: 2
+2026-05-26 21:29:48,777:INFO:ElasticNet(alpha=1.0, copy_X=True, fit_intercept=True, l1_ratio=0.5,
+           max_iter=1000, positive=False, precompute=False, random_state=123,
+           selection='cyclic', tol=0.0001, warm_start=False)
+2026-05-26 21:29:48,779:INFO:create_model() successfully completed......................................
+2026-05-26 21:29:49,418:INFO:SubProcess create_model() end ==================================
+2026-05-26 21:29:49,419:INFO:Creating metrics dataframe
+2026-05-26 21:29:49,467:INFO:Initializing Least Angle Regression
+2026-05-26 21:29:49,468:INFO:Total runtime is 0.10496748288472493 minutes
+2026-05-26 21:29:49,489:INFO:SubProcess create_model() called ==================================
+2026-05-26 21:29:49,491:INFO:Initializing create_model()
+2026-05-26 21:29:49,492:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000027C140FD850>, estimator=lar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000027C8990CD50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-26 21:29:49,492:INFO:Checking exceptions
+2026-05-26 21:29:49,493:INFO:Importing libraries
+2026-05-26 21:29:49,495:INFO:Copying training dataset
+2026-05-26 21:29:49,550:INFO:Defining folds
+2026-05-26 21:29:49,551:INFO:Declaring metric variables
+2026-05-26 21:29:49,574:INFO:Importing untrained model
+2026-05-26 21:29:49,599:INFO:Least Angle Regression Imported successfully
+2026-05-26 21:29:49,642:INFO:Starting cross validation
+2026-05-26 21:29:49,647:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-26 21:29:50,178:INFO:Calculating mean and std
+2026-05-26 21:29:50,185:INFO:Creating metrics dataframe
+2026-05-26 21:29:50,196:INFO:Uploading results into container
+2026-05-26 21:29:50,200:INFO:Uploading model into container now
+2026-05-26 21:29:50,202:INFO:_master_model_container: 5
+2026-05-26 21:29:50,203:INFO:_display_container: 2
+2026-05-26 21:29:50,206:INFO:Lars(copy_X=True, eps=2.220446049250313e-16, fit_intercept=True, fit_path=True,
+     jitter=None, n_nonzero_coefs=500, precompute='auto', random_state=123,
+     verbose=False)
+2026-05-26 21:29:50,207:INFO:create_model() successfully completed......................................
+2026-05-26 21:29:50,852:INFO:SubProcess create_model() end ==================================
+2026-05-26 21:29:50,853:INFO:Creating metrics dataframe
+2026-05-26 21:29:50,896:INFO:Initializing Lasso Least Angle Regression
+2026-05-26 21:29:50,898:INFO:Total runtime is 0.1288003881772359 minutes
+2026-05-26 21:29:50,916:INFO:SubProcess create_model() called ==================================
+2026-05-26 21:29:50,918:INFO:Initializing create_model()
+2026-05-26 21:29:50,919:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000027C140FD850>, estimator=llar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000027C8990CD50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-26 21:29:50,920:INFO:Checking exceptions
+2026-05-26 21:29:50,920:INFO:Importing libraries
+2026-05-26 21:29:50,920:INFO:Copying training dataset
+2026-05-26 21:29:50,976:INFO:Defining folds
+2026-05-26 21:29:50,978:INFO:Declaring metric variables
+2026-05-26 21:29:51,000:INFO:Importing untrained model
+2026-05-26 21:29:51,018:INFO:Lasso Least Angle Regression Imported successfully
+2026-05-26 21:29:51,058:INFO:Starting cross validation
+2026-05-26 21:29:51,063:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-26 21:29:51,562:INFO:Calculating mean and std
+2026-05-26 21:29:51,570:INFO:Creating metrics dataframe
+2026-05-26 21:29:51,582:INFO:Uploading results into container
+2026-05-26 21:29:51,586:INFO:Uploading model into container now
+2026-05-26 21:29:51,589:INFO:_master_model_container: 6
+2026-05-26 21:29:51,589:INFO:_display_container: 2
+2026-05-26 21:29:51,591:INFO:LassoLars(alpha=1.0, copy_X=True, eps=2.220446049250313e-16, fit_intercept=True,
+          fit_path=True, jitter=None, max_iter=500, positive=False,
+          precompute='auto', random_state=123, verbose=False)
+2026-05-26 21:29:51,591:INFO:create_model() successfully completed......................................
+2026-05-26 21:29:52,182:INFO:SubProcess create_model() end ==================================
+2026-05-26 21:29:52,183:INFO:Creating metrics dataframe
+2026-05-26 21:29:52,232:INFO:Initializing Orthogonal Matching Pursuit
+2026-05-26 21:29:52,234:INFO:Total runtime is 0.15105983813603718 minutes
+2026-05-26 21:29:52,256:INFO:SubProcess create_model() called ==================================
+2026-05-26 21:29:52,258:INFO:Initializing create_model()
+2026-05-26 21:29:52,258:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000027C140FD850>, estimator=omp, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000027C8990CD50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-26 21:29:52,258:INFO:Checking exceptions
+2026-05-26 21:29:52,258:INFO:Importing libraries
+2026-05-26 21:29:52,259:INFO:Copying training dataset
