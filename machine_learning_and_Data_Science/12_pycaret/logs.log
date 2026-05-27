@@ -11515,3 +11515,107 @@ Alternately, you can install this by running `pip install pycaret[models]`
 2026-05-26 21:29:34,115:INFO:Soft dependency imported: catboost: 1.2.10
 2026-05-26 21:29:34,157:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
 2026-05-26 21:29:34,192:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2026-05-26 21:29:34,654:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2026-05-26 21:29:35,009:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-05-26 21:29:35,014:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-26 21:29:35,016:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-26 21:29:35,020:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2026-05-26 21:29:35,090:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2026-05-26 21:29:35,552:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2026-05-26 21:29:35,895:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-05-26 21:29:35,901:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-26 21:29:35,903:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-26 21:29:35,973:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2026-05-26 21:29:36,411:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2026-05-26 21:29:36,762:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-05-26 21:29:36,765:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-26 21:29:36,767:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-26 21:29:36,770:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2026-05-26 21:29:37,263:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2026-05-26 21:29:37,599:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-05-26 21:29:37,603:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-26 21:29:37,605:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-26 21:29:38,101:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2026-05-26 21:29:38,417:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-05-26 21:29:38,419:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-26 21:29:38,422:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-26 21:29:38,425:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2026-05-26 21:29:38,930:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2026-05-26 21:29:39,091:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-26 21:29:39,092:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-26 21:29:39,476:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2026-05-26 21:29:39,667:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-26 21:29:39,668:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-26 21:29:39,672:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2026-05-26 21:29:40,156:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-26 21:29:40,157:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-26 21:29:41,001:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-26 21:29:41,002:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-26 21:29:41,010:INFO:Preparing preprocessing pipeline...
+2026-05-26 21:29:41,012:INFO:Set up simple imputation.
+2026-05-26 21:29:41,123:INFO:Finished creating preprocessing pipeline.
+2026-05-26 21:29:41,130:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Olive\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['MedInc', 'HouseAge', 'AveRooms',
+                                             'AveBedrms', 'Population',
+                                             'AveOccup', 'Latitude',
+                                             'Longitude'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent')))],
+         verbose=False)
+2026-05-26 21:29:41,132:INFO:Creating final display dataframe.
+2026-05-26 21:29:41,542:INFO:Setup _display_container:                     Description             Value
+0                    Session id               123
+1                        Target       MedHouseVal
+2                   Target type        Regression
+3           Original data shape        (20640, 9)
+4        Transformed data shape        (20640, 9)
+5   Transformed train set shape        (14447, 9)
+6    Transformed test set shape         (6193, 9)
+7              Numeric features                 8
+8                    Preprocess              True
+9               Imputation type            simple
+10           Numeric imputation              mean
+11       Categorical imputation              mode
+12               Fold Generator             KFold
+13                  Fold Number                10
+14                     CPU Jobs                -1
+15                      Use GPU             False
+16               Log Experiment             False
+17              Experiment Name  reg-default-name
+18                          USI              6866
+2026-05-26 21:29:42,130:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-26 21:29:42,132:INFO:Soft dependency imported: catboost: 1.2.10
