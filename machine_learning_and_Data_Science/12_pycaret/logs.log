@@ -11819,3 +11819,74 @@ Alternately, you can install this by running `pip install pycaret[models]`
 2026-05-26 21:29:52,258:INFO:Checking exceptions
 2026-05-26 21:29:52,258:INFO:Importing libraries
 2026-05-26 21:29:52,259:INFO:Copying training dataset
+2026-05-26 21:29:52,317:INFO:Defining folds
+2026-05-26 21:29:52,317:INFO:Declaring metric variables
+2026-05-26 21:29:52,335:INFO:Importing untrained model
+2026-05-26 21:29:52,357:INFO:Orthogonal Matching Pursuit Imported successfully
+2026-05-26 21:29:52,401:INFO:Starting cross validation
+2026-05-26 21:29:52,405:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-26 21:29:53,373:INFO:Calculating mean and std
+2026-05-26 21:29:53,378:INFO:Creating metrics dataframe
+2026-05-26 21:29:53,392:INFO:Uploading results into container
+2026-05-26 21:29:53,394:INFO:Uploading model into container now
+2026-05-26 21:29:53,396:INFO:_master_model_container: 7
+2026-05-26 21:29:53,396:INFO:_display_container: 2
+2026-05-26 21:29:53,398:INFO:OrthogonalMatchingPursuit(fit_intercept=True, n_nonzero_coefs=None,
+                          precompute='auto', tol=None)
+2026-05-26 21:29:53,399:INFO:create_model() successfully completed......................................
+2026-05-26 21:29:54,009:INFO:SubProcess create_model() end ==================================
+2026-05-26 21:29:54,010:INFO:Creating metrics dataframe
+2026-05-26 21:29:54,063:INFO:Initializing Bayesian Ridge
+2026-05-26 21:29:54,064:INFO:Total runtime is 0.18157503604888914 minutes
+2026-05-26 21:29:54,081:INFO:SubProcess create_model() called ==================================
+2026-05-26 21:29:54,083:INFO:Initializing create_model()
+2026-05-26 21:29:54,084:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000027C140FD850>, estimator=br, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000027C8990CD50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-26 21:29:54,084:INFO:Checking exceptions
+2026-05-26 21:29:54,085:INFO:Importing libraries
+2026-05-26 21:29:54,085:INFO:Copying training dataset
+2026-05-26 21:29:54,132:INFO:Defining folds
+2026-05-26 21:29:54,133:INFO:Declaring metric variables
+2026-05-26 21:29:54,153:INFO:Importing untrained model
+2026-05-26 21:29:54,173:INFO:Bayesian Ridge Imported successfully
+2026-05-26 21:29:54,210:INFO:Starting cross validation
+2026-05-26 21:29:54,213:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-26 21:29:54,701:INFO:Calculating mean and std
+2026-05-26 21:29:54,707:INFO:Creating metrics dataframe
+2026-05-26 21:29:54,719:INFO:Uploading results into container
+2026-05-26 21:29:54,721:INFO:Uploading model into container now
+2026-05-26 21:29:54,723:INFO:_master_model_container: 8
+2026-05-26 21:29:54,724:INFO:_display_container: 2
+2026-05-26 21:29:54,726:INFO:BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, alpha_init=None,
+              compute_score=False, copy_X=True, fit_intercept=True,
+              lambda_1=1e-06, lambda_2=1e-06, lambda_init=None, max_iter=None,
+              n_iter='deprecated', tol=0.001, verbose=False)
+2026-05-26 21:29:54,726:INFO:create_model() successfully completed......................................
+2026-05-26 21:29:55,245:INFO:SubProcess create_model() end ==================================
+2026-05-26 21:29:55,246:INFO:Creating metrics dataframe
+2026-05-26 21:29:55,293:INFO:Initializing Passive Aggressive Regressor
+2026-05-26 21:29:55,293:INFO:Total runtime is 0.2020588159561157 minutes
+2026-05-26 21:29:55,319:INFO:SubProcess create_model() called ==================================
+2026-05-26 21:29:55,320:INFO:Initializing create_model()
+2026-05-26 21:29:55,321:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000027C140FD850>, estimator=par, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000027C8990CD50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-26 21:29:55,321:INFO:Checking exceptions
+2026-05-26 21:29:55,322:INFO:Importing libraries
+2026-05-26 21:29:55,322:INFO:Copying training dataset
+2026-05-26 21:29:55,380:INFO:Defining folds
+2026-05-26 21:29:55,381:INFO:Declaring metric variables
+2026-05-26 21:29:55,406:INFO:Importing untrained model
+2026-05-26 21:29:55,423:INFO:Passive Aggressive Regressor Imported successfully
+2026-05-26 21:29:55,458:INFO:Starting cross validation
+2026-05-26 21:29:55,461:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-26 21:29:56,088:INFO:Calculating mean and std
+2026-05-26 21:29:56,094:INFO:Creating metrics dataframe
+2026-05-26 21:29:56,107:INFO:Uploading results into container
+2026-05-26 21:29:56,110:INFO:Uploading model into container now
+2026-05-26 21:29:56,112:INFO:_master_model_container: 9
+2026-05-26 21:29:56,113:INFO:_display_container: 2
+2026-05-26 21:29:56,115:INFO:PassiveAggressiveRegressor(C=1.0, average=False, early_stopping=False,
+                           epsilon=0.1, fit_intercept=True,
+                           loss='epsilon_insensitive', max_iter=1000,
+                           n_iter_no_change=5, random_state=123, shuffle=True,
+                           tol=0.001, validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2026-05-26 21:29:56,116:INFO:create_model() successfully completed......................................
