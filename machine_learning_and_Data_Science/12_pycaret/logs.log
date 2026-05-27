@@ -9141,3 +9141,362 @@ Returning the number of logical cores instead. You can silence this warning by s
     max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
     random_state=123, verbose=0)
 2026-05-26 21:10:11,379:INFO:create_model() successfully completed......................................
+2026-05-26 21:25:27,731:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-05-26 21:25:27,733:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-05-26 21:25:27,734:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-05-26 21:25:27,734:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-05-26 21:25:54,010:INFO:PyCaret ClassificationExperiment
+2026-05-26 21:25:54,012:INFO:Logging name: clf-default-name
+2026-05-26 21:25:54,013:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2026-05-26 21:25:54,015:INFO:version 3.3.2
+2026-05-26 21:25:54,016:INFO:Initializing setup()
+2026-05-26 21:25:54,016:INFO:self.USI: a5df
+2026-05-26 21:25:54,017:INFO:self._variable_keys: {'exp_name_log', 'X_train', 'data', '_available_plots', 'y_train', 'exp_id', 'target_param', 'gpu_n_jobs_param', 'y_test', 'logging_param', 'is_multiclass', 'fold_generator', '_ml_usecase', 'seed', 'log_plots_param', 'fold_shuffle_param', 'memory', 'n_jobs_param', 'fix_imbalance', 'fold_groups_param', 'gpu_param', 'USI', 'pipeline', 'y', 'html_param', 'X_test', 'X', 'idx'}
+2026-05-26 21:25:54,017:INFO:Checking environment
+2026-05-26 21:25:54,018:INFO:python_version: 3.11.15
+2026-05-26 21:25:54,018:INFO:python_build: ('main', 'Mar 11 2026 17:12:15')
+2026-05-26 21:25:54,018:INFO:machine: AMD64
+2026-05-26 21:25:54,018:INFO:platform: Windows-10-10.0.26200-SP0
+2026-05-26 21:25:54,021:INFO:Memory: svmem(total=8301043712, available=1009754112, percent=87.8, used=7291289600, free=1009754112)
+2026-05-26 21:25:54,022:INFO:Physical Core: 10
+2026-05-26 21:25:54,022:INFO:Logical Core: 12
+2026-05-26 21:25:54,023:INFO:Checking libraries
+2026-05-26 21:25:54,023:INFO:System:
+2026-05-26 21:25:54,023:INFO:    python: 3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]
+2026-05-26 21:25:54,023:INFO:executable: c:\Users\Olive\Anaconda\envs\pycaret311\python.exe
+2026-05-26 21:25:54,024:INFO:   machine: Windows-10-10.0.26200-SP0
+2026-05-26 21:25:54,024:INFO:PyCaret required dependencies:
+2026-05-26 21:25:54,090:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-26 21:26:02,635:INFO:                 pip: 26.0.1
+2026-05-26 21:26:02,635:INFO:          setuptools: 82.0.1
+2026-05-26 21:26:02,635:INFO:             pycaret: 3.3.2
+2026-05-26 21:26:02,636:INFO:             IPython: 9.13.0
+2026-05-26 21:26:02,636:INFO:          ipywidgets: 8.1.8
+2026-05-26 21:26:02,636:INFO:                tqdm: 4.67.3
+2026-05-26 21:26:02,636:INFO:               numpy: 1.26.4
+2026-05-26 21:26:02,637:INFO:              pandas: 2.1.4
+2026-05-26 21:26:02,637:INFO:              jinja2: 3.1.6
+2026-05-26 21:26:02,637:INFO:               scipy: 1.11.4
+2026-05-26 21:26:02,637:INFO:              joblib: 1.3.2
+2026-05-26 21:26:02,637:INFO:             sklearn: 1.4.2
+2026-05-26 21:26:02,638:INFO:                pyod: 3.4.0
+2026-05-26 21:26:02,638:INFO:            imblearn: 0.14.1
+2026-05-26 21:26:02,638:INFO:   category_encoders: 2.7.0
+2026-05-26 21:26:02,638:INFO:            lightgbm: 4.6.0
+2026-05-26 21:26:02,638:INFO:               numba: 0.62.1
+2026-05-26 21:26:02,638:INFO:            requests: 2.34.2
+2026-05-26 21:26:02,639:INFO:          matplotlib: 3.7.5
+2026-05-26 21:26:02,639:INFO:          scikitplot: 0.3.7
+2026-05-26 21:26:02,639:INFO:         yellowbrick: 1.5
+2026-05-26 21:26:02,639:INFO:              plotly: 6.7.0
+2026-05-26 21:26:02,640:INFO:    plotly-resampler: Not installed
+2026-05-26 21:26:02,640:INFO:             kaleido: 1.3.0
+2026-05-26 21:26:02,640:INFO:           schemdraw: 0.15
+2026-05-26 21:26:02,640:INFO:         statsmodels: 0.14.6
+2026-05-26 21:26:02,640:INFO:              sktime: 0.26.0
+2026-05-26 21:26:02,640:INFO:               tbats: 1.1.3
+2026-05-26 21:26:02,641:INFO:            pmdarima: 2.0.4
+2026-05-26 21:26:02,641:INFO:              psutil: 7.2.2
+2026-05-26 21:26:02,642:INFO:          markupsafe: 3.0.3
+2026-05-26 21:26:02,642:INFO:             pickle5: Not installed
+2026-05-26 21:26:02,642:INFO:         cloudpickle: 3.1.2
+2026-05-26 21:26:02,642:INFO:         deprecation: 2.1.0
+2026-05-26 21:26:02,642:INFO:              xxhash: 3.7.0
+2026-05-26 21:26:02,642:INFO:           wurlitzer: Not installed
+2026-05-26 21:26:02,642:INFO:PyCaret optional dependencies:
+2026-05-26 21:26:34,822:INFO:                shap: 0.44.1
+2026-05-26 21:26:34,822:INFO:           interpret: 0.6.9
+2026-05-26 21:26:34,822:INFO:                umap: 0.5.7
+2026-05-26 21:26:34,822:INFO:     ydata_profiling: 4.18.4
+2026-05-26 21:26:34,822:INFO:  explainerdashboard: 0.5.8
+2026-05-26 21:26:34,822:INFO:             autoviz: Not installed
+2026-05-26 21:26:34,823:INFO:           fairlearn: 0.7.0
+2026-05-26 21:26:34,823:INFO:          deepchecks: Not installed
+2026-05-26 21:26:34,823:INFO:             xgboost: Not installed
+2026-05-26 21:26:34,823:INFO:            catboost: 1.2.10
+2026-05-26 21:26:34,824:INFO:              kmodes: 0.12.2
+2026-05-26 21:26:34,824:INFO:             mlxtend: 0.23.4
+2026-05-26 21:26:34,825:INFO:       statsforecast: 1.5.0
+2026-05-26 21:26:34,825:INFO:        tune_sklearn: Not installed
+2026-05-26 21:26:34,825:INFO:                 ray: Not installed
+2026-05-26 21:26:34,826:INFO:            hyperopt: 0.2.7
+2026-05-26 21:26:34,826:INFO:              optuna: 4.8.0
+2026-05-26 21:26:34,826:INFO:               skopt: 0.10.2
+2026-05-26 21:26:34,826:INFO:              mlflow: 3.12.0
+2026-05-26 21:26:34,826:INFO:              gradio: 6.14.0
+2026-05-26 21:26:34,827:INFO:             fastapi: 0.136.3
+2026-05-26 21:26:34,827:INFO:             uvicorn: 0.48.0
+2026-05-26 21:26:34,827:INFO:              m2cgen: 0.10.0
+2026-05-26 21:26:34,827:INFO:           evidently: 0.4.40
+2026-05-26 21:26:34,827:INFO:               fugue: 0.8.7
+2026-05-26 21:26:34,827:INFO:           streamlit: Not installed
+2026-05-26 21:26:34,827:INFO:             prophet: Not installed
+2026-05-26 21:26:34,827:INFO:None
+2026-05-26 21:26:34,828:INFO:Set up data.
+2026-05-26 21:26:34,870:INFO:Set up folding strategy.
+2026-05-26 21:26:34,870:INFO:Set up train/test split.
+2026-05-26 21:26:34,897:INFO:Set up index.
+2026-05-26 21:26:34,902:INFO:Assigning column types.
+2026-05-26 21:26:34,926:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2026-05-26 21:26:35,228:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-05-26 21:26:35,249:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-05-26 21:26:35,494:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-26 21:26:35,496:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-26 21:26:39,353:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-05-26 21:26:39,358:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-05-26 21:26:39,557:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-26 21:26:39,558:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-26 21:26:39,561:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2026-05-26 21:26:39,863:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-05-26 21:26:40,051:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-26 21:26:40,052:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-26 21:26:40,351:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-05-26 21:26:40,538:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-26 21:26:40,539:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-26 21:26:40,542:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2026-05-26 21:26:41,032:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-26 21:26:41,034:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-26 21:26:41,510:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-26 21:26:41,512:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-26 21:26:41,528:INFO:Preparing preprocessing pipeline...
+2026-05-26 21:26:41,537:INFO:Set up simple imputation.
+2026-05-26 21:26:41,540:INFO:Set up column name cleaning.
+2026-05-26 21:26:41,738:INFO:Finished creating preprocessing pipeline.
+2026-05-26 21:26:41,765:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Olive\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['sepal length (cm)',
+                                             'sepal width (cm)',
+                                             'petal length (cm)',
+                                             'petal width (cm)'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'...
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False)
+2026-05-26 21:26:41,765:INFO:Creating final display dataframe.
+2026-05-26 21:26:42,090:INFO:Setup _display_container:                     Description             Value
+0                    Session id               123
+1                        Target            target
+2                   Target type        Multiclass
+3           Original data shape          (150, 5)
+4        Transformed data shape          (150, 5)
+5   Transformed train set shape          (105, 5)
+6    Transformed test set shape           (45, 5)
+7              Numeric features                 4
+8                    Preprocess              True
+9               Imputation type            simple
+10           Numeric imputation              mean
+11       Categorical imputation              mode
+12               Fold Generator   StratifiedKFold
+13                  Fold Number                10
+14                     CPU Jobs                -1
+15                      Use GPU             False
+16               Log Experiment             False
+17              Experiment Name  clf-default-name
+18                          USI              a5df
+2026-05-26 21:26:42,632:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-26 21:26:42,634:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-26 21:26:43,184:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-05-26 21:26:43,186:INFO:Soft dependency imported: catboost: 1.2.10
+2026-05-26 21:26:43,195:INFO:setup() successfully completed in 49.22s...............
+2026-05-26 21:26:43,380:INFO:Initializing compare_models()
+2026-05-26 21:26:43,381:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000027C14037710>, include=None, exclude=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x0000027C14037710>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>})
+2026-05-26 21:26:43,381:INFO:Checking exceptions
+2026-05-26 21:26:43,436:INFO:Preparing display monitor
+2026-05-26 21:26:43,715:INFO:Initializing Logistic Regression
+2026-05-26 21:26:43,716:INFO:Total runtime is 1.7007191975911457e-05 minutes
+2026-05-26 21:26:43,739:INFO:SubProcess create_model() called ==================================
+2026-05-26 21:26:43,741:INFO:Initializing create_model()
+2026-05-26 21:26:43,742:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000027C14037710>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000027C88586390>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-26 21:26:43,742:INFO:Checking exceptions
+2026-05-26 21:26:43,742:INFO:Importing libraries
+2026-05-26 21:26:43,744:INFO:Copying training dataset
+2026-05-26 21:26:43,764:INFO:Defining folds
+2026-05-26 21:26:43,764:INFO:Declaring metric variables
+2026-05-26 21:26:43,785:INFO:Importing untrained model
+2026-05-26 21:26:43,811:INFO:Logistic Regression Imported successfully
+2026-05-26 21:26:43,852:INFO:Starting cross validation
+2026-05-26 21:26:43,857:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-26 21:27:24,657:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-26 21:27:24,656:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-26 21:27:24,672:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-26 21:27:24,673:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-26 21:27:24,676:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-26 21:27:24,682:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-26 21:27:24,675:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-26 21:27:24,682:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-05-26 21:27:39,676:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-26 21:27:39,677:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-26 21:27:39,678:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-26 21:27:39,680:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2026-05-26 21:27:40,184:INFO:Calculating mean and std
+2026-05-26 21:27:40,346:INFO:Creating metrics dataframe
+2026-05-26 21:27:40,493:INFO:Uploading results into container
+2026-05-26 21:27:40,512:INFO:Uploading model into container now
+2026-05-26 21:27:40,531:INFO:_master_model_container: 1
+2026-05-26 21:27:40,531:INFO:_display_container: 2
+2026-05-26 21:27:40,546:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=123, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2026-05-26 21:27:40,547:INFO:create_model() successfully completed......................................
+2026-05-26 21:27:46,633:INFO:SubProcess create_model() end ==================================
+2026-05-26 21:27:46,634:INFO:Creating metrics dataframe
+2026-05-26 21:27:46,686:INFO:Initializing K Neighbors Classifier
+2026-05-26 21:27:46,688:INFO:Total runtime is 1.0495428562164306 minutes
+2026-05-26 21:27:46,704:INFO:SubProcess create_model() called ==================================
+2026-05-26 21:27:46,706:INFO:Initializing create_model()
+2026-05-26 21:27:46,707:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000027C14037710>, estimator=knn, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000027C88586390>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-26 21:27:46,708:INFO:Checking exceptions
+2026-05-26 21:27:46,708:INFO:Importing libraries
+2026-05-26 21:27:46,711:INFO:Copying training dataset
+2026-05-26 21:27:46,737:INFO:Defining folds
+2026-05-26 21:27:46,738:INFO:Declaring metric variables
+2026-05-26 21:27:46,759:INFO:Importing untrained model
+2026-05-26 21:27:46,777:INFO:K Neighbors Classifier Imported successfully
+2026-05-26 21:27:46,809:INFO:Starting cross validation
+2026-05-26 21:27:46,813:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-26 21:28:11,921:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
