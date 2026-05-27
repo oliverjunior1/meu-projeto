@@ -11890,3 +11890,124 @@ Alternately, you can install this by running `pip install pycaret[models]`
                            tol=0.001, validation_fraction=0.1, verbose=0,
                            warm_start=False)
 2026-05-26 21:29:56,116:INFO:create_model() successfully completed......................................
+2026-05-26 21:29:56,633:INFO:SubProcess create_model() end ==================================
+2026-05-26 21:29:56,634:INFO:Creating metrics dataframe
+2026-05-26 21:29:56,684:INFO:Initializing Huber Regressor
+2026-05-26 21:29:56,685:INFO:Total runtime is 0.2252511064211527 minutes
+2026-05-26 21:29:56,704:INFO:SubProcess create_model() called ==================================
+2026-05-26 21:29:56,706:INFO:Initializing create_model()
+2026-05-26 21:29:56,707:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000027C140FD850>, estimator=huber, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000027C8990CD50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-26 21:29:56,707:INFO:Checking exceptions
+2026-05-26 21:29:56,707:INFO:Importing libraries
+2026-05-26 21:29:56,708:INFO:Copying training dataset
+2026-05-26 21:29:56,751:INFO:Defining folds
+2026-05-26 21:29:56,753:INFO:Declaring metric variables
+2026-05-26 21:29:56,775:INFO:Importing untrained model
+2026-05-26 21:29:56,792:INFO:Huber Regressor Imported successfully
+2026-05-26 21:29:56,822:INFO:Starting cross validation
+2026-05-26 21:29:56,826:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-26 21:29:58,405:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2026-05-26 21:29:58,427:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2026-05-26 21:29:58,579:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2026-05-26 21:29:58,588:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2026-05-26 21:29:58,594:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2026-05-26 21:29:58,803:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2026-05-26 21:29:58,844:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2026-05-26 21:29:58,905:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2026-05-26 21:29:58,967:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2026-05-26 21:29:59,019:WARNING:c:\Users\Olive\Anaconda\envs\pycaret311\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2026-05-26 21:29:59,066:INFO:Calculating mean and std
+2026-05-26 21:29:59,075:INFO:Creating metrics dataframe
+2026-05-26 21:29:59,091:INFO:Uploading results into container
+2026-05-26 21:29:59,094:INFO:Uploading model into container now
+2026-05-26 21:29:59,097:INFO:_master_model_container: 10
+2026-05-26 21:29:59,098:INFO:_display_container: 2
+2026-05-26 21:29:59,100:INFO:HuberRegressor(alpha=0.0001, epsilon=1.35, fit_intercept=True, max_iter=100,
+               tol=1e-05, warm_start=False)
+2026-05-26 21:29:59,100:INFO:create_model() successfully completed......................................
+2026-05-26 21:29:59,629:INFO:SubProcess create_model() end ==================================
+2026-05-26 21:29:59,630:INFO:Creating metrics dataframe
+2026-05-26 21:29:59,680:INFO:Initializing K Neighbors Regressor
+2026-05-26 21:29:59,681:INFO:Total runtime is 0.27518783013025916 minutes
+2026-05-26 21:29:59,700:INFO:SubProcess create_model() called ==================================
+2026-05-26 21:29:59,703:INFO:Initializing create_model()
+2026-05-26 21:29:59,705:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000027C140FD850>, estimator=knn, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000027C8990CD50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-26 21:29:59,705:INFO:Checking exceptions
+2026-05-26 21:29:59,706:INFO:Importing libraries
+2026-05-26 21:29:59,707:INFO:Copying training dataset
+2026-05-26 21:29:59,761:INFO:Defining folds
+2026-05-26 21:29:59,761:INFO:Declaring metric variables
+2026-05-26 21:29:59,786:INFO:Importing untrained model
+2026-05-26 21:29:59,809:INFO:K Neighbors Regressor Imported successfully
+2026-05-26 21:29:59,847:INFO:Starting cross validation
+2026-05-26 21:29:59,850:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-26 21:30:00,641:INFO:Calculating mean and std
+2026-05-26 21:30:00,649:INFO:Creating metrics dataframe
+2026-05-26 21:30:00,661:INFO:Uploading results into container
+2026-05-26 21:30:00,664:INFO:Uploading model into container now
+2026-05-26 21:30:00,666:INFO:_master_model_container: 11
+2026-05-26 21:30:00,666:INFO:_display_container: 2
+2026-05-26 21:30:00,668:INFO:KNeighborsRegressor(algorithm='auto', leaf_size=30, metric='minkowski',
+                    metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                    weights='uniform')
+2026-05-26 21:30:00,668:INFO:create_model() successfully completed......................................
