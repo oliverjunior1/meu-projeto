@@ -12011,3 +12011,47 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
                     weights='uniform')
 2026-05-26 21:30:00,668:INFO:create_model() successfully completed......................................
+2026-05-26 21:30:01,199:INFO:SubProcess create_model() end ==================================
+2026-05-26 21:30:01,200:INFO:Creating metrics dataframe
+2026-05-26 21:30:01,254:INFO:Initializing Decision Tree Regressor
+2026-05-26 21:30:01,255:INFO:Total runtime is 0.3014126181602478 minutes
+2026-05-26 21:30:01,274:INFO:SubProcess create_model() called ==================================
+2026-05-26 21:30:01,275:INFO:Initializing create_model()
+2026-05-26 21:30:01,276:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000027C140FD850>, estimator=dt, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000027C8990CD50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-26 21:30:01,276:INFO:Checking exceptions
+2026-05-26 21:30:01,277:INFO:Importing libraries
+2026-05-26 21:30:01,277:INFO:Copying training dataset
+2026-05-26 21:30:01,333:INFO:Defining folds
+2026-05-26 21:30:01,334:INFO:Declaring metric variables
+2026-05-26 21:30:01,357:INFO:Importing untrained model
+2026-05-26 21:30:01,384:INFO:Decision Tree Regressor Imported successfully
+2026-05-26 21:30:01,422:INFO:Starting cross validation
+2026-05-26 21:30:01,424:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-05-26 21:30:02,723:INFO:Calculating mean and std
+2026-05-26 21:30:02,729:INFO:Creating metrics dataframe
+2026-05-26 21:30:02,741:INFO:Uploading results into container
+2026-05-26 21:30:02,744:INFO:Uploading model into container now
+2026-05-26 21:30:02,745:INFO:_master_model_container: 12
+2026-05-26 21:30:02,746:INFO:_display_container: 2
+2026-05-26 21:30:02,747:INFO:DecisionTreeRegressor(ccp_alpha=0.0, criterion='squared_error', max_depth=None,
+                      max_features=None, max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      monotonic_cst=None, random_state=123, splitter='best')
+2026-05-26 21:30:02,748:INFO:create_model() successfully completed......................................
+2026-05-26 21:30:03,311:INFO:SubProcess create_model() end ==================================
+2026-05-26 21:30:03,312:INFO:Creating metrics dataframe
+2026-05-26 21:30:03,357:INFO:Initializing Random Forest Regressor
+2026-05-26 21:30:03,357:INFO:Total runtime is 0.33644831975301104 minutes
+2026-05-26 21:30:03,375:INFO:SubProcess create_model() called ==================================
+2026-05-26 21:30:03,376:INFO:Initializing create_model()
+2026-05-26 21:30:03,377:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000027C140FD850>, estimator=rf, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000027C8990CD50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-05-26 21:30:03,377:INFO:Checking exceptions
+2026-05-26 21:30:03,378:INFO:Importing libraries
+2026-05-26 21:30:03,378:INFO:Copying training dataset
+2026-05-26 21:30:03,447:INFO:Defining folds
+2026-05-26 21:30:03,448:INFO:Declaring metric variables
+2026-05-26 21:30:03,477:INFO:Importing untrained model
+2026-05-26 21:30:03,500:INFO:Random Forest Regressor Imported successfully
+2026-05-26 21:30:03,540:INFO:Starting cross validation
+2026-05-26 21:30:03,543:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
